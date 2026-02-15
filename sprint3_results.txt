@@ -1,0 +1,760 @@
+
+Running 27 tests using 4 workers
+
+Navigating to /forgot_password...
+Navigating to /dashboard...
+Navigating to /signup...
+Navigating to /login...
+Console Errors on /forgot_password: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓   2 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Forgot Password (/forgot_password) (3.2s)
+Navigating to /routes...
+Console Errors on /dashboard: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+UI element verification failed on /signup: ExpectError: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32mtrue[39m
+Received: [31mfalse[39m
+    at verifyUIElements [90m(/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/[39mtests/e2e/autonomous_crawler.spec.ts:261:29[90m)[39m
+    at [90m/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/[39mtests/e2e/autonomous_crawler.spec.ts:226:17 {
+  matcherResult: {
+    actual: [33mfalse[39m,
+    expected: [33mtrue[39m,
+    message: [32m'\x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBe\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m) // Object.is equality\x1B[22m\n'[39m +
+      [32m'\n'[39m +
+      [32m'Expected: \x1B[32mtrue\x1B[39m\n'[39m +
+      [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+    name: [32m'toBe'[39m,
+    pass: [33mfalse[39m
+  },
+  [32mSymbol(step)[39m: {
+    category: [32m'expect'[39m,
+    apiName: [32m'expect.toBe'[39m,
+    title: [32m'Expect "toBe"'[39m,
+    shortTitle: [32m'Expect "toBe"'[39m,
+    params: { expected: [33mtrue[39m },
+    infectParentStepsWithError: [90mundefined[39m,
+    stepId: [32m'expect@65'[39m,
+    group: [90mundefined[39m,
+    boxedStack: [90mundefined[39m,
+    location: {
+      file: [32m'/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts'[39m,
+      line: [33m261[39m,
+      column: [33m29[39m,
+      function: [32m'verifyUIElements'[39m
+    },
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [36m[TestInfoImpl][39m,
+      _stepId: [32m'expect@65'[39m,
+      _title: [32m'Expect "toBe"'[39m,
+      _parentStep: [90mundefined[39m,
+      skip: [36m[Function (anonymous)][39m
+    },
+    complete: [36m[Function: complete][39m,
+    endWallTime: [33m1769512472433[39m,
+    error: {
+      message: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBe\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m) // Object.is equality\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Expected: \x1B[32mtrue\x1B[39m\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+      stack: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBe\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m) // Object.is equality\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Expected: \x1B[32mtrue\x1B[39m\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m\n'[39m +
+        [32m'    at verifyUIElements (/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:261:29)\n'[39m +
+        [32m'    at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:226:17'[39m,
+      cause: [90mundefined[39m
+    }
+  }
+}
+Console Errors on /signup: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓   3 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Dashboard (/dashboard) (3.6s)
+  ✓   1 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Signup (/signup) (3.7s)
+UI element verification failed on /login: ExpectError: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32mtrue[39m
+Received: [31mfalse[39m
+    at verifyUIElements [90m(/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/[39mtests/e2e/autonomous_crawler.spec.ts:261:29[90m)[39m
+    at [90m/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/[39mtests/e2e/autonomous_crawler.spec.ts:226:17 {
+  matcherResult: {
+    actual: [33mfalse[39m,
+    expected: [33mtrue[39m,
+    message: [32m'\x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBe\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m) // Object.is equality\x1B[22m\n'[39m +
+      [32m'\n'[39m +
+      [32m'Expected: \x1B[32mtrue\x1B[39m\n'[39m +
+      [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+    name: [32m'toBe'[39m,
+    pass: [33mfalse[39m
+  },
+  [32mSymbol(step)[39m: {
+    category: [32m'expect'[39m,
+    apiName: [32m'expect.toBe'[39m,
+    title: [32m'Expect "toBe"'[39m,
+    shortTitle: [32m'Expect "toBe"'[39m,
+    params: { expected: [33mtrue[39m },
+    infectParentStepsWithError: [90mundefined[39m,
+    stepId: [32m'expect@65'[39m,
+    group: [90mundefined[39m,
+    boxedStack: [90mundefined[39m,
+    location: {
+      file: [32m'/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts'[39m,
+      line: [33m261[39m,
+      column: [33m29[39m,
+      function: [32m'verifyUIElements'[39m
+    },
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [36m[TestInfoImpl][39m,
+      _stepId: [32m'expect@65'[39m,
+      _title: [32m'Expect "toBe"'[39m,
+      _parentStep: [90mundefined[39m,
+      skip: [36m[Function (anonymous)][39m
+    },
+    complete: [36m[Function: complete][39m,
+    endWallTime: [33m1769512472474[39m,
+    error: {
+      message: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBe\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m) // Object.is equality\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Expected: \x1B[32mtrue\x1B[39m\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+      stack: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBe\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m) // Object.is equality\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Expected: \x1B[32mtrue\x1B[39m\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m\n'[39m +
+        [32m'    at verifyUIElements (/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:261:29)\n'[39m +
+        [32m'    at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:226:17'[39m,
+      cause: [90mundefined[39m
+    }
+  }
+}
+Console Errors on /login: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓   4 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Login (/login) (3.7s)
+Navigating to /routes/999...
+Navigating to /manual-routes...
+Navigating to /manual-routes/add...
+UI element verification failed on /routes: locator.count: Unexpected token "=" while parsing css selector "table, .list, .grid, [class*="route"], [class*="empty"], text=/No routes|Create your first/i". Did you mean to CSS.escape it?
+    at verifyUIElements [90m(/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/[39mtests/e2e/autonomous_crawler.spec.ts:271:155[90m)[39m
+    at [90m/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/[39mtests/e2e/autonomous_crawler.spec.ts:226:17 {
+  name: [32m'Error'[39m,
+  [32mSymbol(step)[39m: {
+    location: {
+      file: [32m'/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts'[39m,
+      line: [33m271[39m,
+      column: [33m155[39m,
+      function: [32m'verifyUIElements'[39m
+    },
+    category: [32m'pw:api'[39m,
+    title: [32m'Query count table, .list, .grid, [class*="route"], [class*="empty"], text=/No routes|Create your first/i'[39m,
+    apiName: [32m'locator.count'[39m,
+    params: {
+      selector: [32m'table, .list, .grid, [class*="route"], [class*="empty"], text=/No routes|Create your first/i'[39m
+    },
+    group: [90mundefined[39m,
+    stepId: [32m'pw:api@55'[39m,
+    boxedStack: [90mundefined[39m,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [36m[TestInfoImpl][39m,
+      _stepId: [32m'pw:api@55'[39m,
+      _title: [32m'Query count table, .list, .grid, [class*="route"], [class*="empty"], text=/No routes|Create your first/i'[39m,
+      _parentStep: [90mundefined[39m,
+      skip: [36m[Function (anonymous)][39m
+    },
+    complete: [36m[Function: complete][39m,
+    endWallTime: [33m1769512474264[39m,
+    error: {
+      message: [32m'Error: locator.count: Unexpected token "=" while parsing css selector "table, .list, .grid, [class*="route"], [class*="empty"], text=/No routes|Create your first/i". Did you mean to CSS.escape it?'[39m,
+      stack: [32m'Error: locator.count: Unexpected token "=" while parsing css selector "table, .list, .grid, [class*="route"], [class*="empty"], text=/No routes|Create your first/i". Did you mean to CSS.escape it?\n'[39m +
+        [32m'    at verifyUIElements (/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:271:155)\n'[39m +
+        [32m'    at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:226:17'[39m,
+      cause: [90mundefined[39m
+    }
+  }
+}
+Console Errors on /routes: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓   5 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Routes List (/routes) (2.3s)
+Navigating to /manual-routes/999/edit...
+Console Errors on /manual-routes/add: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓   8 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Add Manual Route (/manual-routes/add) (2.9s)
+UI element verification failed on /manual-routes: locator.count: Unexpected token "=" while parsing css selector "table, .list, .grid, [class*="route"], [class*="empty"], text=/No routes|Create your first/i". Did you mean to CSS.escape it?
+    at verifyUIElements [90m(/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/[39mtests/e2e/autonomous_crawler.spec.ts:271:155[90m)[39m
+    at [90m/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/[39mtests/e2e/autonomous_crawler.spec.ts:226:17 {
+  name: [32m'Error'[39m,
+  [32mSymbol(step)[39m: {
+    location: {
+      file: [32m'/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts'[39m,
+      line: [33m271[39m,
+      column: [33m155[39m,
+      function: [32m'verifyUIElements'[39m
+    },
+    category: [32m'pw:api'[39m,
+    title: [32m'Query count table, .list, .grid, [class*="route"], [class*="empty"], text=/No routes|Create your first/i'[39m,
+    apiName: [32m'locator.count'[39m,
+    params: {
+      selector: [32m'table, .list, .grid, [class*="route"], [class*="empty"], text=/No routes|Create your first/i'[39m
+    },
+    group: [90mundefined[39m,
+    stepId: [32m'pw:api@55'[39m,
+    boxedStack: [90mundefined[39m,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [36m[TestInfoImpl][39m,
+      _stepId: [32m'pw:api@55'[39m,
+      _title: [32m'Query count table, .list, .grid, [class*="route"], [class*="empty"], text=/No routes|Create your first/i'[39m,
+      _parentStep: [90mundefined[39m,
+      skip: [36m[Function (anonymous)][39m
+    },
+    complete: [36m[Function: complete][39m,
+    endWallTime: [33m1769512475455[39m,
+    error: {
+      message: [32m'Error: locator.count: Unexpected token "=" while parsing css selector "table, .list, .grid, [class*="route"], [class*="empty"], text=/No routes|Create your first/i". Did you mean to CSS.escape it?'[39m,
+      stack: [32m'Error: locator.count: Unexpected token "=" while parsing css selector "table, .list, .grid, [class*="route"], [class*="empty"], text=/No routes|Create your first/i". Did you mean to CSS.escape it?\n'[39m +
+        [32m'    at verifyUIElements (/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:271:155)\n'[39m +
+        [32m'    at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:226:17'[39m,
+      cause: [90mundefined[39m
+    }
+  }
+}
+Console Errors on /manual-routes: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓   7 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Manual Routes List (/manual-routes) (3.0s)
+Navigating to /planned-routes/add...
+Navigating to /planned-routes...
+UI element verification failed on /routes/999: ExpectError: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32mtrue[39m
+Received: [31mfalse[39m
+    at verifyUIElements [90m(/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/[39mtests/e2e/autonomous_crawler.spec.ts:276:42[90m)[39m
+    at [90m/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/[39mtests/e2e/autonomous_crawler.spec.ts:226:17 {
+  matcherResult: {
+    actual: [33mfalse[39m,
+    expected: [33mtrue[39m,
+    message: [32m'\x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBe\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m) // Object.is equality\x1B[22m\n'[39m +
+      [32m'\n'[39m +
+      [32m'Expected: \x1B[32mtrue\x1B[39m\n'[39m +
+      [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+    name: [32m'toBe'[39m,
+    pass: [33mfalse[39m
+  },
+  [32mSymbol(step)[39m: {
+    category: [32m'expect'[39m,
+    apiName: [32m'expect.toBe'[39m,
+    title: [32m'Expect "toBe"'[39m,
+    shortTitle: [32m'Expect "toBe"'[39m,
+    params: { expected: [33mtrue[39m },
+    infectParentStepsWithError: [90mundefined[39m,
+    stepId: [32m'expect@56'[39m,
+    group: [90mundefined[39m,
+    boxedStack: [90mundefined[39m,
+    location: {
+      file: [32m'/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts'[39m,
+      line: [33m276[39m,
+      column: [33m42[39m,
+      function: [32m'verifyUIElements'[39m
+    },
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [36m[TestInfoImpl][39m,
+      _stepId: [32m'expect@56'[39m,
+      _title: [32m'Expect "toBe"'[39m,
+      _parentStep: [90mundefined[39m,
+      skip: [36m[Function (anonymous)][39m
+    },
+    complete: [36m[Function: complete][39m,
+    endWallTime: [33m1769512476167[39m,
+    error: {
+      message: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBe\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m) // Object.is equality\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Expected: \x1B[32mtrue\x1B[39m\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+      stack: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBe\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m) // Object.is equality\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Expected: \x1B[32mtrue\x1B[39m\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m\n'[39m +
+        [32m'    at verifyUIElements (/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:276:42)\n'[39m +
+        [32m'    at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:226:17'[39m,
+      cause: [90mundefined[39m
+    }
+  }
+}
+Console Errors on /routes/999: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓   6 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Route Viewer (ID: 999) (/routes/999) (3.8s)
+Navigating to /planned-routes/888...
+Console Errors on /manual-routes/999/edit: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓   9 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Edit Manual Route (ID: 999) (/manual-routes/999/edit) (2.2s)
+Navigating to /planned-routes/888/edit...
+UI element verification failed on /planned-routes: locator.count: Unexpected token "=" while parsing css selector "table, .list, .grid, [class*="route"], [class*="empty"], text=/No routes|Create your first/i". Did you mean to CSS.escape it?
+    at verifyUIElements [90m(/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/[39mtests/e2e/autonomous_crawler.spec.ts:271:155[90m)[39m
+    at [90m/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/[39mtests/e2e/autonomous_crawler.spec.ts:226:17 {
+  name: [32m'Error'[39m,
+  [32mSymbol(step)[39m: {
+    location: {
+      file: [32m'/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts'[39m,
+      line: [33m271[39m,
+      column: [33m155[39m,
+      function: [32m'verifyUIElements'[39m
+    },
+    category: [32m'pw:api'[39m,
+    title: [32m'Query count table, .list, .grid, [class*="route"], [class*="empty"], text=/No routes|Create your first/i'[39m,
+    apiName: [32m'locator.count'[39m,
+    params: {
+      selector: [32m'table, .list, .grid, [class*="route"], [class*="empty"], text=/No routes|Create your first/i'[39m
+    },
+    group: [90mundefined[39m,
+    stepId: [32m'pw:api@55'[39m,
+    boxedStack: [90mundefined[39m,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [36m[TestInfoImpl][39m,
+      _stepId: [32m'pw:api@55'[39m,
+      _title: [32m'Query count table, .list, .grid, [class*="route"], [class*="empty"], text=/No routes|Create your first/i'[39m,
+      _parentStep: [90mundefined[39m,
+      skip: [36m[Function (anonymous)][39m
+    },
+    complete: [36m[Function: complete][39m,
+    endWallTime: [33m1769512478071[39m,
+    error: {
+      message: [32m'Error: locator.count: Unexpected token "=" while parsing css selector "table, .list, .grid, [class*="route"], [class*="empty"], text=/No routes|Create your first/i". Did you mean to CSS.escape it?'[39m,
+      stack: [32m'Error: locator.count: Unexpected token "=" while parsing css selector "table, .list, .grid, [class*="route"], [class*="empty"], text=/No routes|Create your first/i". Did you mean to CSS.escape it?\n'[39m +
+        [32m'    at verifyUIElements (/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:271:155)\n'[39m +
+        [32m'    at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:226:17'[39m,
+      cause: [90mundefined[39m
+    }
+  }
+}
+Console Errors on /planned-routes: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓  10 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Planned Routes List (/planned-routes) (2.6s)
+Console Errors on /planned-routes/add: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+Navigating to /surveys/777/overview...
+  ✓  11 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Add Planned Route (/planned-routes/add) (2.8s)
+Navigating to /surveys/777/report...
+Console Errors on /planned-routes/888/edit: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+UI element verification failed on /planned-routes/888: ExpectError: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32mtrue[39m
+Received: [31mfalse[39m
+    at verifyUIElements [90m(/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/[39mtests/e2e/autonomous_crawler.spec.ts:276:42[90m)[39m
+    at [90m/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/[39mtests/e2e/autonomous_crawler.spec.ts:226:17 {
+  matcherResult: {
+    actual: [33mfalse[39m,
+    expected: [33mtrue[39m,
+    message: [32m'\x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBe\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m) // Object.is equality\x1B[22m\n'[39m +
+      [32m'\n'[39m +
+      [32m'Expected: \x1B[32mtrue\x1B[39m\n'[39m +
+      [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+    name: [32m'toBe'[39m,
+    pass: [33mfalse[39m
+  },
+  [32mSymbol(step)[39m: {
+    category: [32m'expect'[39m,
+    apiName: [32m'expect.toBe'[39m,
+    title: [32m'Expect "toBe"'[39m,
+    shortTitle: [32m'Expect "toBe"'[39m,
+    params: { expected: [33mtrue[39m },
+    infectParentStepsWithError: [90mundefined[39m,
+    stepId: [32m'expect@56'[39m,
+    group: [90mundefined[39m,
+    boxedStack: [90mundefined[39m,
+    location: {
+      file: [32m'/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts'[39m,
+      line: [33m276[39m,
+      column: [33m42[39m,
+      function: [32m'verifyUIElements'[39m
+    },
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [36m[TestInfoImpl][39m,
+      _stepId: [32m'expect@56'[39m,
+      _title: [32m'Expect "toBe"'[39m,
+      _parentStep: [90mundefined[39m,
+      skip: [36m[Function (anonymous)][39m
+    },
+    complete: [36m[Function: complete][39m,
+    endWallTime: [33m1769512479073[39m,
+    error: {
+      message: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBe\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m) // Object.is equality\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Expected: \x1B[32mtrue\x1B[39m\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+      stack: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBe\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m) // Object.is equality\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Expected: \x1B[32mtrue\x1B[39m\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m\n'[39m +
+        [32m'    at verifyUIElements (/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:276:42)\n'[39m +
+        [32m'    at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:226:17'[39m,
+      cause: [90mundefined[39m
+    }
+  }
+}
+Console Errors on /planned-routes/888: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓  13 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Edit Planned Route (ID: 888) (/planned-routes/888/edit) (2.5s)
+  ✓  12 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: View Planned Route (ID: 888) (/planned-routes/888) (2.9s)
+Navigating to /admin/templates...
+Navigating to /admin/users...
+Console Errors on /surveys/777/overview: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓  14 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Survey Execution (ID: 777) (/surveys/777/overview) (3.0s)
+Navigating to /admin/organizations...
+Console Errors on /surveys/777/report: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓  15 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Survey Report (ID: 777) (/surveys/777/report) (3.6s)
+Navigating to /admin/tools...
+Console Errors on /admin/templates: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'getTemplates error: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓  17 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Templates Admin (/admin/templates) (3.1s)
+Navigating to /user/profile...
+UI element verification failed on /admin/users: ExpectError: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32mtrue[39m
+Received: [31mfalse[39m
+    at verifyUIElements [90m(/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/[39mtests/e2e/autonomous_crawler.spec.ts:283:32[90m)[39m
+    at [90m/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/[39mtests/e2e/autonomous_crawler.spec.ts:226:17 {
+  matcherResult: {
+    actual: [33mfalse[39m,
+    expected: [33mtrue[39m,
+    message: [32m'\x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBe\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m) // Object.is equality\x1B[22m\n'[39m +
+      [32m'\n'[39m +
+      [32m'Expected: \x1B[32mtrue\x1B[39m\n'[39m +
+      [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+    name: [32m'toBe'[39m,
+    pass: [33mfalse[39m
+  },
+  [32mSymbol(step)[39m: {
+    category: [32m'expect'[39m,
+    apiName: [32m'expect.toBe'[39m,
+    title: [32m'Expect "toBe"'[39m,
+    shortTitle: [32m'Expect "toBe"'[39m,
+    params: { expected: [33mtrue[39m },
+    infectParentStepsWithError: [90mundefined[39m,
+    stepId: [32m'expect@56'[39m,
+    group: [90mundefined[39m,
+    boxedStack: [90mundefined[39m,
+    location: {
+      file: [32m'/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts'[39m,
+      line: [33m283[39m,
+      column: [33m32[39m,
+      function: [32m'verifyUIElements'[39m
+    },
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [36m[TestInfoImpl][39m,
+      _stepId: [32m'expect@56'[39m,
+      _title: [32m'Expect "toBe"'[39m,
+      _parentStep: [90mundefined[39m,
+      skip: [36m[Function (anonymous)][39m
+    },
+    complete: [36m[Function: complete][39m,
+    endWallTime: [33m1769512482440[39m,
+    error: {
+      message: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBe\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m) // Object.is equality\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Expected: \x1B[32mtrue\x1B[39m\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+      stack: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBe\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m) // Object.is equality\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Expected: \x1B[32mtrue\x1B[39m\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m\n'[39m +
+        [32m'    at verifyUIElements (/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:283:32)\n'[39m +
+        [32m'    at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:226:17'[39m,
+      cause: [90mundefined[39m
+    }
+  }
+}
+Console Errors on /admin/users: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓  16 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Users Admin (/admin/users) (3.4s)
+Navigating to /user/settings...
+Console Errors on /admin/organizations: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓  18 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Organizations Admin (/admin/organizations) (2.4s)
+Navigating to /user/subscription...
+Console Errors on /admin/tools: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓  19 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Admin Tools (/admin/tools) (2.7s)
+Navigating to /reporting...
+Console Errors on /user/profile: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Get MFA status failed: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓  20 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Profile (/user/profile) (2.9s)
+Console Errors on /user/settings: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Get MFA status failed: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+Navigating to /browse-templates...
+  ✓  21 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Settings (/user/settings) (3.1s)
+Navigating to /notifications...
+Console Errors on /user/subscription: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓  22 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Subscription (/user/subscription) (2.7s)
+Navigating to /pdf-viewer...
+Console Errors on /reporting: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓  23 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Reporting Hub (/reporting) (2.3s)
+Navigating to /transport-engineering...
+Console Errors on /browse-templates: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓  24 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Browse Templates (/browse-templates) (2.9s)
+Console Errors on /notifications: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓  25 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Notifications (/notifications) (2.6s)
+Console Errors on /pdf-viewer: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓  26 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: PDF Viewer (/pdf-viewer) (3.2s)
+Console Errors on /transport-engineering: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓  27 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Transport Engineering (/transport-engineering) (2.4s)
+
+  27 passed (24.5s)

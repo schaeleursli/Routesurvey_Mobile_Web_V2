@@ -1,0 +1,330 @@
+/**
+ * Review Workspace Layout Styles
+ *
+ * CSS Grid layouts for the Survey Review workspace at different breakpoints.
+ */
+
+/* CSS Variables for consistent spacing and sizing */
+:root {
+    --review-topbar-height: 56px;
+    --review-inspector-max-width: 560px;
+    --review-inspector-min-width: 360px;
+    --review-list-min-width: 320px;
+    --review-list-max-width: 520px;
+    --review-drawer-collapsed: 44px;
+    --review-drawer-half: 35vh;
+    --review-drawer-full: 60vh;
+    --review-transition-duration: 200ms;
+}
+
+/* Main Workspace Container */
+.review-workspace {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--bg-base);
+}
+
+/* ========================================================================== */
+/* Normal Desktop (1280-1599px): 2-pane + bottom drawer                       */
+/* ========================================================================== */
+
+@media (min-width: 1280px) and (max-width: 1599px) {
+    .review-workspace {
+        grid-template-rows: var(--review-topbar-height) 1fr auto;
+        grid-template-columns: 1fr minmax(var(--review-inspector-min-width), 520px);
+        grid-template-areas:
+            "topbar topbar"
+            "map inspector"
+            "drawer drawer";
+    }
+
+    .review-workspace__topbar {
+        grid-area: topbar;
+    }
+
+    .review-workspace__map {
+        grid-area: map;
+    }
+
+    .review-workspace__inspector {
+        grid-area: inspector;
+        max-width: 520px;
+    }
+
+    .review-workspace__list {
+        grid-area: drawer;
+    }
+
+    /* Drawer mode for list */
+    .review-workspace__list--drawer {
+        position: relative;
+        transition: height var(--review-transition-duration) ease;
+    }
+
+    .review-workspace__list--drawer.collapsed {
+        height: var(--review-drawer-collapsed);
+    }
+
+    .review-workspace__list--drawer.half {
+        height: var(--review-drawer-half);
+    }
+
+    .review-workspace__list--drawer.full {
+        height: var(--review-drawer-full);
+    }
+}
+
+/* ========================================================================== */
+/* Wide Desktop (1600-2239px): 3-pane layout                                  */
+/* ========================================================================== */
+
+@media (min-width: 1600px) and (max-width: 2239px) {
+    .review-workspace {
+        grid-template-rows: var(--review-topbar-height) 1fr;
+        grid-template-columns:
+            minmax(640px, 1fr) minmax(var(--review-list-min-width), var(--review-list-max-width)) minmax(420px, var(--review-inspector-max-width));
+        grid-template-areas:
+            "topbar topbar topbar"
+            "map list inspector";
+    }
+
+    .review-workspace__topbar {
+        grid-area: topbar;
+    }
+
+    .review-workspace__map {
+        grid-area: map;
+        min-width: 720px;
+    }
+
+    .review-workspace__list {
+        grid-area: list;
+    }
+
+    .review-workspace__inspector {
+        grid-area: inspector;
+        max-width: var(--review-inspector-max-width);
+    }
+}
+
+/* ========================================================================== */
+/* Ultra-wide Desktop (≥2240px): 3-pane with capped inspector                 */
+/* ========================================================================== */
+
+@media (min-width: 2240px) {
+    .review-workspace {
+        grid-template-rows: var(--review-topbar-height) 1fr;
+        grid-template-columns:
+            minmax(800px, 1fr) minmax(400px, 560px) var(--review-inspector-max-width);
+        grid-template-areas:
+            "topbar topbar topbar"
+            "map list inspector";
+    }
+
+    .review-workspace__topbar {
+        grid-area: topbar;
+    }
+
+    .review-workspace__map {
+        grid-area: map;
+    }
+
+    .review-workspace__list {
+        grid-area: list;
+    }
+
+    .review-workspace__inspector {
+        grid-area: inspector;
+        width: var(--review-inspector-max-width);
+        max-width: var(--review-inspector-max-width);
+    }
+}
+
+/* ========================================================================== */
+/* Smaller screens fallback (< 1280px): stacked layout                        */
+/* ========================================================================== */
+
+@media (max-width: 1279px) {
+    .review-workspace {
+        grid-template-rows: var(--review-topbar-height) 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "topbar"
+            "main";
+    }
+
+    .review-workspace__topbar {
+        grid-area: topbar;
+    }
+
+    .review-workspace__map,
+    .review-workspace__list,
+    .review-workspace__inspector {
+        grid-area: main;
+    }
+
+    /* Only show one pane at a time - controlled by JS */
+    .review-workspace__map.hidden,
+    .review-workspace__list.hidden,
+    .review-workspace__inspector.hidden {
+        display: none;
+    }
+}
+
+/* ========================================================================== */
+/* Component Styles                                                            */
+/* ========================================================================== */
+
+/* Top Bar */
+.review-workspace__topbar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1rem;
+    background: var(--bg-surface);
+    border-bottom: 1px solid var(--border);
+    z-index: 100;
+}
+
+/* Map Pane */
+.review-workspace__map {
+    position: relative;
+    overflow: hidden;
+}
+
+/* List Pane */
+.review-workspace__list {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: var(--bg-surface);
+    border-left: 1px solid var(--border);
+}
+
+/* Inspector Pane */
+.review-workspace__inspector {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: var(--bg-surface);
+    border-left: 1px solid var(--border);
+}
+
+/* Drawer Handle */
+.review-workspace__drawer-handle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: var(--review-drawer-collapsed);
+    padding: 0 1rem;
+    background: var(--bg-surface-2);
+    border-top: 1px solid var(--border);
+    cursor: pointer;
+    user-select: none;
+}
+
+.review-workspace__drawer-handle:hover {
+    background: var(--bg-hover);
+}
+
+.review-workspace__drawer-handle-icon {
+    transition: transform var(--review-transition-duration) ease;
+}
+
+.review-workspace__drawer-handle-icon.expanded {
+    transform: rotate(180deg);
+}
+
+/* ========================================================================== */
+/* KPI Color Variables                                                         */
+/* ========================================================================== */
+
+:root {
+    --kpi-empty: #dc2626;
+    /* Red 600 */
+    --kpi-partial: #f59e0b;
+    /* Amber 500 */
+    --kpi-complete: #22c55e;
+    /* Green 500 */
+    --kpi-na: #9ca3af;
+    /* Gray 400 */
+}
+
+/* KPI Icon States */
+.kpi-icon--empty {
+    color: var(--kpi-empty);
+}
+
+.kpi-icon--partial {
+    color: var(--kpi-partial);
+}
+
+.kpi-icon--complete {
+    color: var(--kpi-complete);
+}
+
+.kpi-icon--na {
+    color: var(--kpi-na);
+}
+
+/* ========================================================================== */
+/* Micro-interactions                                                          */
+/* ========================================================================== */
+
+/* Row hover/selection */
+.review-row {
+    transition: background-color 150ms ease;
+}
+
+.review-row:hover {
+    background-color: var(--bg-hover);
+}
+
+.review-row--selected {
+    background-color: var(--bg-selected);
+}
+
+/* Map marker selection */
+.review-marker--selected {
+    transform: scale(1.05);
+    transition: transform 150ms ease;
+}
+
+/* Photo viewer fade */
+.photo-viewer-enter-active,
+.photo-viewer-leave-active {
+    transition: opacity 140ms ease;
+}
+
+.photo-viewer-enter-from,
+.photo-viewer-leave-to {
+    opacity: 0;
+}
+
+/* ========================================================================== */
+/* Utility Classes                                                             */
+/* ========================================================================== */
+
+.review-scroll-container {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.review-sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--bg-surface);
+}
+
+.review-dirty-indicator {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: var(--kpi-partial);
+    border-radius: 50%;
+    margin-left: 0.5rem;
+}

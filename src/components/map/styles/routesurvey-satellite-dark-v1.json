@@ -1,0 +1,445 @@
+{
+    "version": 8,
+    "name": "RouteSurvey Satellite Dark v1",
+    "metadata": {
+        "rs:spec": "routesurvey-satellite-dark-v1",
+        "rs:notes": "Satellite as evidence background; engineered overlays above: roads (subtle), route (yellow), power lines (red), bridges (cased)"
+    },
+    "center": [
+        0,
+        0
+    ],
+    "zoom": 3,
+    "bearing": 0,
+    "pitch": 0,
+    "glyphs": "https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf",
+    "sprite": "https://demotiles.maplibre.org/styles/osm-bright-gl-style/sprite",
+    "sources": {
+        "satellite": {
+            "type": "raster",
+            "tiles": [
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+            ],
+            "tileSize": 256,
+            "minzoom": 0,
+            "maxzoom": 19
+        },
+        "osm": {
+            "type": "vector",
+            "tiles": [
+                "https://api.maptiler.com/tiles/v3/{z}/{x}/{y}.pbf?key=YOUR_API_KEY"
+            ],
+            "minzoom": 0,
+            "maxzoom": 14
+        },
+        "route": {
+            "type": "geojson",
+            "data": {
+                "type": "FeatureCollection",
+                "features": []
+            }
+        },
+        "route_bridges": {
+            "type": "geojson",
+            "data": {
+                "type": "FeatureCollection",
+                "features": []
+            }
+        },
+        "powerlines": {
+            "type": "geojson",
+            "data": {
+                "type": "FeatureCollection",
+                "features": []
+            }
+        }
+    },
+    "layers": [
+        {
+            "id": "background",
+            "type": "background",
+            "paint": {
+                "background-color": "#0F1116"
+            }
+        },
+        {
+            "id": "satellite-base",
+            "type": "raster",
+            "source": "satellite",
+            "paint": {
+                "raster-saturation": -0.75,
+                "raster-contrast": 0.9,
+                "raster-brightness-min": 0.15,
+                "raster-brightness-max": 0.8,
+                "raster-opacity": 1.0
+            }
+        },
+        {
+            "id": "satellite-vignette",
+            "type": "background",
+            "paint": {
+                "background-color": "rgba(15,17,22,0.18)"
+            }
+        },
+        {
+            "id": "roads-sat-minor",
+            "type": "line",
+            "source": "osm",
+            "source-layer": "transportation",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    [
+                        "geometry-type"
+                    ],
+                    "LineString"
+                ],
+                [
+                    "match",
+                    [
+                        "get",
+                        "class"
+                    ],
+                    [
+                        "path",
+                        "track",
+                        "service",
+                        "minor"
+                    ],
+                    true,
+                    false
+                ]
+            ],
+            "paint": {
+                "line-color": "rgba(255,255,255,0.12)",
+                "line-width": [
+                    "interpolate",
+                    [
+                        "linear"
+                    ],
+                    [
+                        "zoom"
+                    ],
+                    10,
+                    0.4,
+                    12,
+                    1.0,
+                    16,
+                    2.0
+                ],
+                "line-opacity": 1,
+                "line-join": "round",
+                "line-cap": "round"
+            }
+        },
+        {
+            "id": "roads-sat-major",
+            "type": "line",
+            "source": "osm",
+            "source-layer": "transportation",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    [
+                        "geometry-type"
+                    ],
+                    "LineString"
+                ],
+                [
+                    "match",
+                    [
+                        "get",
+                        "class"
+                    ],
+                    [
+                        "primary",
+                        "secondary",
+                        "tertiary",
+                        "trunk"
+                    ],
+                    true,
+                    false
+                ]
+            ],
+            "paint": {
+                "line-color": "rgba(255,255,255,0.22)",
+                "line-width": [
+                    "interpolate",
+                    [
+                        "linear"
+                    ],
+                    [
+                        "zoom"
+                    ],
+                    9,
+                    0.8,
+                    12,
+                    2.0,
+                    16,
+                    3.6
+                ],
+                "line-opacity": 1,
+                "line-join": "round",
+                "line-cap": "round"
+            }
+        },
+        {
+            "id": "roads-sat-motorway",
+            "type": "line",
+            "source": "osm",
+            "source-layer": "transportation",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    [
+                        "geometry-type"
+                    ],
+                    "LineString"
+                ],
+                [
+                    "match",
+                    [
+                        "get",
+                        "class"
+                    ],
+                    [
+                        "motorway"
+                    ],
+                    true,
+                    false
+                ]
+            ],
+            "paint": {
+                "line-color": "rgba(255,255,255,0.28)",
+                "line-width": [
+                    "interpolate",
+                    [
+                        "linear"
+                    ],
+                    [
+                        "zoom"
+                    ],
+                    9,
+                    1.0,
+                    12,
+                    2.4,
+                    16,
+                    4.2
+                ],
+                "line-opacity": 1,
+                "line-join": "round",
+                "line-cap": "round"
+            }
+        },
+        {
+            "id": "road-labels-sat",
+            "type": "symbol",
+            "source": "osm",
+            "source-layer": "transportation_name",
+            "minzoom": 12,
+            "layout": {
+                "text-field": [
+                    "coalesce",
+                    [
+                        "get",
+                        "name"
+                    ],
+                    ""
+                ],
+                "text-font": [
+                    "Open Sans Regular"
+                ],
+                "text-size": [
+                    "interpolate",
+                    [
+                        "linear"
+                    ],
+                    [
+                        "zoom"
+                    ],
+                    12,
+                    11,
+                    16,
+                    14
+                ],
+                "symbol-placement": "line",
+                "text-rotation-alignment": "map",
+                "text-max-angle": 30,
+                "text-padding": 2
+            },
+            "paint": {
+                "text-color": "rgba(220,224,232,0.78)",
+                "text-halo-color": "rgba(15,17,22,0.9)",
+                "text-halo-width": 1.2,
+                "text-opacity": 1
+            }
+        },
+        {
+            "id": "powerlines-overlay",
+            "type": "line",
+            "source": "powerlines",
+            "paint": {
+                "line-color": "#FF2D2D",
+                "line-width": [
+                    "interpolate",
+                    [
+                        "linear"
+                    ],
+                    [
+                        "zoom"
+                    ],
+                    8,
+                    1.2,
+                    12,
+                    2.0,
+                    16,
+                    3.0
+                ],
+                "line-opacity": 0.95,
+                "line-dasharray": [
+                    2,
+                    2
+                ],
+                "line-join": "miter",
+                "line-cap": "butt"
+            }
+        },
+        {
+            "id": "route-halo",
+            "type": "line",
+            "source": "route",
+            "paint": {
+                "line-color": "rgba(255, 212, 0, 0.35)",
+                "line-width": [
+                    "interpolate",
+                    [
+                        "linear"
+                    ],
+                    [
+                        "zoom"
+                    ],
+                    8,
+                    7,
+                    12,
+                    13,
+                    16,
+                    20
+                ],
+                "line-blur": 1.1,
+                "line-join": "round",
+                "line-cap": "round"
+            }
+        },
+        {
+            "id": "route-line",
+            "type": "line",
+            "source": "route",
+            "paint": {
+                "line-color": "#FFD400",
+                "line-width": [
+                    "interpolate",
+                    [
+                        "linear"
+                    ],
+                    [
+                        "zoom"
+                    ],
+                    8,
+                    2.6,
+                    12,
+                    4.8,
+                    16,
+                    7.6
+                ],
+                "line-opacity": 1,
+                "line-join": "round",
+                "line-cap": "round"
+            }
+        },
+        {
+            "id": "bridge-route-casing",
+            "type": "line",
+            "source": "route_bridges",
+            "paint": {
+                "line-color": "rgba(255,255,255,0.88)",
+                "line-width": [
+                    "interpolate",
+                    [
+                        "linear"
+                    ],
+                    [
+                        "zoom"
+                    ],
+                    8,
+                    3.6,
+                    12,
+                    6.2,
+                    16,
+                    9.6
+                ],
+                "line-join": "round",
+                "line-cap": "round"
+            }
+        },
+        {
+            "id": "bridge-route-line",
+            "type": "line",
+            "source": "route_bridges",
+            "paint": {
+                "line-color": "#FFE16A",
+                "line-width": [
+                    "interpolate",
+                    [
+                        "linear"
+                    ],
+                    [
+                        "zoom"
+                    ],
+                    8,
+                    2.7,
+                    12,
+                    4.9,
+                    16,
+                    7.8
+                ],
+                "line-opacity": 1,
+                "line-join": "round",
+                "line-cap": "round"
+            }
+        },
+        {
+            "id": "poi-minimal-sat",
+            "type": "symbol",
+            "source": "osm",
+            "source-layer": "poi",
+            "minzoom": 15,
+            "layout": {
+                "text-field": [
+                    "coalesce",
+                    [
+                        "get",
+                        "name"
+                    ],
+                    ""
+                ],
+                "text-font": [
+                    "Open Sans Regular"
+                ],
+                "text-size": 11,
+                "text-offset": [
+                    0,
+                    0.8
+                ]
+            },
+            "paint": {
+                "text-color": "rgba(180,188,202,0.55)",
+                "text-halo-color": "rgba(15,17,22,0.9)",
+                "text-halo-width": 1.0,
+                "text-opacity": 1
+            }
+        }
+    ]
+}

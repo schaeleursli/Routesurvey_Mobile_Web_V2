@@ -1,0 +1,2602 @@
+
+Running 81 tests using 4 workers
+
+[1A[2K[1/81] [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Forgot Password (/forgot_password)
+[1A[2K[2/81] [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Dashboard (/dashboard)
+[1A[2K[3/81] [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Login (/login)
+[1A[2K[4/81] [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Signup (/signup)
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Forgot Password (/forgot_password)
+Navigating to /forgot_password...
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Login (/login)
+Navigating to /login...
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Dashboard (/dashboard)
+Navigating to /dashboard...
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Signup (/signup)
+Navigating to /signup...
+
+[1A[2K  1) [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Dashboard (/dashboard) 
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: page.goto: Test timeout of 30000ms exceeded.
+    Call log:
+    [2m  - navigating to "http://localhost:5173/dashboard", waiting until "load"[22m
+
+
+      152 |
+      153 |             console.log(`Navigating to ${route.path}...`);
+    > 154 |             const response = await page.goto(route.path);
+          |                                         ^
+      155 |
+      156 |             // 1. Basic Status Check
+      157 |             // Note: Single Page Apps might return 200 for everything and handle 404 client-side
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:154:41
+
+
+[1A[2K  2) [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Signup (/signup) 
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: page.goto: Test timeout of 30000ms exceeded.
+    Call log:
+    [2m  - navigating to "http://localhost:5173/signup", waiting until "load"[22m
+
+
+      152 |
+      153 |             console.log(`Navigating to ${route.path}...`);
+    > 154 |             const response = await page.goto(route.path);
+          |                                         ^
+      155 |
+      156 |             // 1. Basic Status Check
+      157 |             // Note: Single Page Apps might return 200 for everything and handle 404 client-side
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:154:41
+
+
+[1A[2K  3) [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Login (/login) 
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: page.goto: Test timeout of 30000ms exceeded.
+    Call log:
+    [2m  - navigating to "http://localhost:5173/login", waiting until "load"[22m
+
+
+      152 |
+      153 |             console.log(`Navigating to ${route.path}...`);
+    > 154 |             const response = await page.goto(route.path);
+          |                                         ^
+      155 |
+      156 |             // 1. Basic Status Check
+      157 |             // Note: Single Page Apps might return 200 for everything and handle 404 client-side
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:154:41
+
+
+[1A[2K  4) [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Forgot Password (/forgot_password) 
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: page.goto: Test timeout of 30000ms exceeded.
+    Call log:
+    [2m  - navigating to "http://localhost:5173/forgot_password", waiting until "load"[22m
+
+
+      152 |
+      153 |             console.log(`Navigating to ${route.path}...`);
+    > 154 |             const response = await page.goto(route.path);
+          |                                         ^
+      155 |
+      156 |             // 1. Basic Status Check
+      157 |             // Note: Single Page Apps might return 200 for everything and handle 404 client-side
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:154:41
+
+
+[1A[2K[5/81] [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Add Manual Route (/manual-routes/add)
+[1A[2K[6/81] [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Manual Routes List (/manual-routes)
+[1A[2K[7/81] [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Routes List (/routes)
+[1A[2K[8/81] [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Route Viewer (ID: 999) (/routes/999)
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Route Viewer (ID: 999) (/routes/999)
+Navigating to /routes/999...
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Manual Routes List (/manual-routes)
+Navigating to /manual-routes...
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Add Manual Route (/manual-routes/add)
+Navigating to /manual-routes/add...
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Routes List (/routes)
+Navigating to /routes...
+
+[1A[2K  5) [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Manual Routes List (/manual-routes) 
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: page.goto: Test timeout of 30000ms exceeded.
+    Call log:
+    [2m  - navigating to "http://localhost:5173/manual-routes", waiting until "load"[22m
+
+
+      152 |
+      153 |             console.log(`Navigating to ${route.path}...`);
+    > 154 |             const response = await page.goto(route.path);
+          |                                         ^
+      155 |
+      156 |             // 1. Basic Status Check
+      157 |             // Note: Single Page Apps might return 200 for everything and handle 404 client-side
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:154:41
+
+
+[1A[2K  6) [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Add Manual Route (/manual-routes/add) 
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: page.goto: Test timeout of 30000ms exceeded.
+    Call log:
+    [2m  - navigating to "http://localhost:5173/manual-routes/add", waiting until "load"[22m
+
+
+      152 |
+      153 |             console.log(`Navigating to ${route.path}...`);
+    > 154 |             const response = await page.goto(route.path);
+          |                                         ^
+      155 |
+      156 |             // 1. Basic Status Check
+      157 |             // Note: Single Page Apps might return 200 for everything and handle 404 client-side
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:154:41
+
+
+[1A[2K  7) [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Routes List (/routes) 
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: page.goto: Test timeout of 30000ms exceeded.
+    Call log:
+    [2m  - navigating to "http://localhost:5173/routes", waiting until "load"[22m
+
+
+      152 |
+      153 |             console.log(`Navigating to ${route.path}...`);
+    > 154 |             const response = await page.goto(route.path);
+          |                                         ^
+      155 |
+      156 |             // 1. Basic Status Check
+      157 |             // Note: Single Page Apps might return 200 for everything and handle 404 client-side
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:154:41
+
+
+[1A[2K  8) [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Route Viewer (ID: 999) (/routes/999) 
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: page.goto: Test timeout of 30000ms exceeded.
+    Call log:
+    [2m  - navigating to "http://localhost:5173/routes/999", waiting until "load"[22m
+
+
+      152 |
+      153 |             console.log(`Navigating to ${route.path}...`);
+    > 154 |             const response = await page.goto(route.path);
+          |                                         ^
+      155 |
+      156 |             // 1. Basic Status Check
+      157 |             // Note: Single Page Apps might return 200 for everything and handle 404 client-side
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:154:41
+
+
+[1A[2K[9/81] [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Edit Manual Route (ID: 999) (/manual-routes/999/edit)
+[1A[2K[10/81] [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: View Planned Route (ID: 888) (/planned-routes/888)
+[1A[2K[11/81] [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Add Planned Route (/planned-routes/add)
+[1A[2K[12/81] [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Planned Routes List (/planned-routes)
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Add Planned Route (/planned-routes/add)
+Navigating to /planned-routes/add...
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: View Planned Route (ID: 888) (/planned-routes/888)
+Navigating to /planned-routes/888...
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Edit Manual Route (ID: 999) (/manual-routes/999/edit)
+Navigating to /manual-routes/999/edit...
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Planned Routes List (/planned-routes)
+Navigating to /planned-routes...
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Edit Manual Route (ID: 999) (/manual-routes/999/edit)
+Timeout waiting for page load on /manual-routes/999/edit
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: View Planned Route (ID: 888) (/planned-routes/888)
+Timeout waiting for page load on /planned-routes/888
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Add Planned Route (/planned-routes/add)
+Timeout waiting for page load on /planned-routes/add
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Planned Routes List (/planned-routes)
+Timeout waiting for page load on /planned-routes
+
+[1A[2K  9) [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: View Planned Route (ID: 888) (/planned-routes/888) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K  10) [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Edit Manual Route (ID: 999) (/manual-routes/999/edit) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K  11) [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Add Planned Route (/planned-routes/add) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K  12) [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Planned Routes List (/planned-routes) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[13/81] [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Edit Planned Route (ID: 888) (/planned-routes/888/edit)
+[1A[2K[14/81] [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Survey Execution (ID: 777) (/surveys/777/overview)
+[1A[2K[15/81] [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Survey Report (ID: 777) (/surveys/777/report)
+[1A[2K[16/81] [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Users Admin (/admin/users)
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Users Admin (/admin/users)
+Navigating to /admin/users...
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Survey Report (ID: 777) (/surveys/777/report)
+Navigating to /surveys/777/report...
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Edit Planned Route (ID: 888) (/planned-routes/888/edit)
+Navigating to /planned-routes/888/edit...
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Survey Execution (ID: 777) (/surveys/777/overview)
+Navigating to /surveys/777/overview...
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Edit Planned Route (ID: 888) (/planned-routes/888/edit)
+Timeout waiting for page load on /planned-routes/888/edit
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Users Admin (/admin/users)
+Timeout waiting for page load on /admin/users
+
+[1A[2K  13) [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Edit Planned Route (ID: 888) (/planned-routes/888/edit) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K  14) [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Users Admin (/admin/users) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Survey Report (ID: 777) (/surveys/777/report)
+Timeout waiting for page load on /surveys/777/report
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Survey Execution (ID: 777) (/surveys/777/overview)
+Timeout waiting for page load on /surveys/777/overview
+
+[1A[2K  15) [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Survey Report (ID: 777) (/surveys/777/report) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K  16) [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Survey Execution (ID: 777) (/surveys/777/overview) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[17/81] [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Templates Admin (/admin/templates)
+[1A[2K[18/81] [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Organizations Admin (/admin/organizations)
+[1A[2K[19/81] [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Admin Tools (/admin/tools)
+[1A[2K[20/81] [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Profile (/user/profile)
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Admin Tools (/admin/tools)
+Navigating to /admin/tools...
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Templates Admin (/admin/templates)
+Navigating to /admin/templates...
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Organizations Admin (/admin/organizations)
+Navigating to /admin/organizations...
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Profile (/user/profile)
+Navigating to /user/profile...
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Templates Admin (/admin/templates)
+Timeout waiting for page load on /admin/templates
+
+[1A[2K  17) [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Templates Admin (/admin/templates) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Admin Tools (/admin/tools)
+Timeout waiting for page load on /admin/tools
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Profile (/user/profile)
+Timeout waiting for page load on /user/profile
+
+[1A[2K  18) [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Admin Tools (/admin/tools) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K  19) [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Profile (/user/profile) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Organizations Admin (/admin/organizations)
+Timeout waiting for page load on /admin/organizations
+
+[1A[2K  20) [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Organizations Admin (/admin/organizations) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[21/81] [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Settings (/user/settings)
+[1A[2K[22/81] [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Subscription (/user/subscription)
+[1A[2K[23/81] [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Reporting Hub (/reporting)
+[1A[2K[24/81] [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Browse Templates (/browse-templates)
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Settings (/user/settings)
+Navigating to /user/settings...
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Subscription (/user/subscription)
+Navigating to /user/subscription...
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Reporting Hub (/reporting)
+Navigating to /reporting...
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Browse Templates (/browse-templates)
+Navigating to /browse-templates...
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Settings (/user/settings)
+Timeout waiting for page load on /user/settings
+
+[1A[2K  21) [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Settings (/user/settings) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Subscription (/user/subscription)
+Timeout waiting for page load on /user/subscription
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Reporting Hub (/reporting)
+Timeout waiting for page load on /reporting
+
+[1A[2K  22) [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Subscription (/user/subscription) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K  23) [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Reporting Hub (/reporting) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Browse Templates (/browse-templates)
+Timeout waiting for page load on /browse-templates
+
+[1A[2K  24) [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Browse Templates (/browse-templates) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[25/81] [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Notifications (/notifications)
+[1A[2K[26/81] [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: PDF Viewer (/pdf-viewer)
+[1A[2K[27/81] [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Transport Engineering (/transport-engineering)
+[1A[2K[28/81] [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Login (/login)
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Notifications (/notifications)
+Navigating to /notifications...
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: PDF Viewer (/pdf-viewer)
+Navigating to /pdf-viewer...
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Transport Engineering (/transport-engineering)
+Navigating to /transport-engineering...
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Notifications (/notifications)
+Timeout waiting for page load on /notifications
+
+[1A[2K  25) [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Notifications (/notifications) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: PDF Viewer (/pdf-viewer)
+Timeout waiting for page load on /pdf-viewer
+
+[1A[2K[chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Transport Engineering (/transport-engineering)
+Timeout waiting for page load on /transport-engineering
+
+[1A[2K  26) [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: PDF Viewer (/pdf-viewer) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K  27) [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Transport Engineering (/transport-engineering) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[29/81] [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Signup (/signup)
+[1A[2K[30/81] [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Dashboard (/dashboard)
+[1A[2K[31/81] [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Forgot Password (/forgot_password)
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Login (/login)
+Navigating to /login...
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Signup (/signup)
+Navigating to /signup...
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Forgot Password (/forgot_password)
+Navigating to /forgot_password...
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Login (/login)
+Timeout waiting for page load on /login
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Signup (/signup)
+Timeout waiting for page load on /signup
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Dashboard (/dashboard)
+Navigating to /dashboard...
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Forgot Password (/forgot_password)
+Timeout waiting for page load on /forgot_password
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Dashboard (/dashboard)
+Timeout waiting for page load on /dashboard
+
+[1A[2K  28) [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Signup (/signup) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K  29) [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Forgot Password (/forgot_password) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K  30) [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Login (/login) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K  31) [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Dashboard (/dashboard) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[32/81] [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Manual Routes List (/manual-routes)
+[1A[2K[33/81] [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Route Viewer (ID: 999) (/routes/999)
+[1A[2K[34/81] [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Routes List (/routes)
+[1A[2K[35/81] [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Add Manual Route (/manual-routes/add)
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Routes List (/routes)
+Navigating to /routes...
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Manual Routes List (/manual-routes)
+Navigating to /manual-routes...
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Routes List (/routes)
+Timeout waiting for page load on /routes
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Route Viewer (ID: 999) (/routes/999)
+Navigating to /routes/999...
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Manual Routes List (/manual-routes)
+Timeout waiting for page load on /manual-routes
+
+[1A[2K  32) [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Routes List (/routes) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Add Manual Route (/manual-routes/add)
+Navigating to /manual-routes/add...
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Route Viewer (ID: 999) (/routes/999)
+Timeout waiting for page load on /routes/999
+
+[1A[2K  33) [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Manual Routes List (/manual-routes) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[36/81] [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Edit Manual Route (ID: 999) (/manual-routes/999/edit)
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Add Manual Route (/manual-routes/add)
+Timeout waiting for page load on /manual-routes/add
+
+[1A[2K  34) [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Route Viewer (ID: 999) (/routes/999) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[37/81] [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Planned Routes List (/planned-routes)
+[1A[2K  35) [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Add Manual Route (/manual-routes/add) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[38/81] [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Add Planned Route (/planned-routes/add)
+[1A[2K[39/81] [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: View Planned Route (ID: 888) (/planned-routes/888)
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Edit Manual Route (ID: 999) (/manual-routes/999/edit)
+Navigating to /manual-routes/999/edit...
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Planned Routes List (/planned-routes)
+Navigating to /planned-routes...
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Edit Manual Route (ID: 999) (/manual-routes/999/edit)
+Timeout waiting for page load on /manual-routes/999/edit
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: View Planned Route (ID: 888) (/planned-routes/888)
+Navigating to /planned-routes/888...
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Planned Routes List (/planned-routes)
+Timeout waiting for page load on /planned-routes
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Add Planned Route (/planned-routes/add)
+Navigating to /planned-routes/add...
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: View Planned Route (ID: 888) (/planned-routes/888)
+Timeout waiting for page load on /planned-routes/888
+
+[1A[2K  36) [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Planned Routes List (/planned-routes) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Add Planned Route (/planned-routes/add)
+Timeout waiting for page load on /planned-routes/add
+
+[1A[2K  37) [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Edit Manual Route (ID: 999) (/manual-routes/999/edit) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K  38) [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: View Planned Route (ID: 888) (/planned-routes/888) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[40/81] [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Edit Planned Route (ID: 888) (/planned-routes/888/edit)
+[1A[2K  39) [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Add Planned Route (/planned-routes/add) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[41/81] [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Survey Execution (ID: 777) (/surveys/777/overview)
+[1A[2K[42/81] [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Survey Report (ID: 777) (/surveys/777/report)
+[1A[2K[43/81] [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Users Admin (/admin/users)
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Edit Planned Route (ID: 888) (/planned-routes/888/edit)
+Navigating to /planned-routes/888/edit...
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Survey Report (ID: 777) (/surveys/777/report)
+Navigating to /surveys/777/report...
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Edit Planned Route (ID: 888) (/planned-routes/888/edit)
+Timeout waiting for page load on /planned-routes/888/edit
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Survey Report (ID: 777) (/surveys/777/report)
+Timeout waiting for page load on /surveys/777/report
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Users Admin (/admin/users)
+Navigating to /admin/users...
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Survey Execution (ID: 777) (/surveys/777/overview)
+Navigating to /surveys/777/overview...
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Users Admin (/admin/users)
+Timeout waiting for page load on /admin/users
+
+[1A[2K  40) [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Survey Report (ID: 777) (/surveys/777/report) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K  41) [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Edit Planned Route (ID: 888) (/planned-routes/888/edit) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Survey Execution (ID: 777) (/surveys/777/overview)
+Timeout waiting for page load on /surveys/777/overview
+
+[1A[2K  42) [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Users Admin (/admin/users) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K  43) [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Survey Execution (ID: 777) (/surveys/777/overview) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[44/81] [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Organizations Admin (/admin/organizations)
+[1A[2K[45/81] [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Templates Admin (/admin/templates)
+[1A[2K[46/81] [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Admin Tools (/admin/tools)
+[1A[2K[47/81] [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Profile (/user/profile)
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Admin Tools (/admin/tools)
+Navigating to /admin/tools...
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Organizations Admin (/admin/organizations)
+Navigating to /admin/organizations...
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Admin Tools (/admin/tools)
+Timeout waiting for page load on /admin/tools
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Profile (/user/profile)
+Navigating to /user/profile...
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Organizations Admin (/admin/organizations)
+Timeout waiting for page load on /admin/organizations
+
+[1A[2K  44) [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Admin Tools (/admin/tools) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Templates Admin (/admin/templates)
+Navigating to /admin/templates...
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Profile (/user/profile)
+Timeout waiting for page load on /user/profile
+
+[1A[2K  45) [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Organizations Admin (/admin/organizations) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K  46) [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Profile (/user/profile) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Templates Admin (/admin/templates)
+Timeout waiting for page load on /admin/templates
+
+[1A[2K[48/81] [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Settings (/user/settings)
+[1A[2K[49/81] [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Subscription (/user/subscription)
+[1A[2K[50/81] [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Reporting Hub (/reporting)
+[1A[2K  47) [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Templates Admin (/admin/templates) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[51/81] [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Browse Templates (/browse-templates)
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Settings (/user/settings)
+Navigating to /user/settings...
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Subscription (/user/subscription)
+Navigating to /user/subscription...
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Settings (/user/settings)
+Timeout waiting for page load on /user/settings
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Browse Templates (/browse-templates)
+Navigating to /browse-templates...
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Subscription (/user/subscription)
+Timeout waiting for page load on /user/subscription
+
+[1A[2K  48) [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Settings (/user/settings) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Reporting Hub (/reporting)
+Navigating to /reporting...
+
+[1A[2K  49) [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Subscription (/user/subscription) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Browse Templates (/browse-templates)
+Timeout waiting for page load on /browse-templates
+
+[1A[2K[52/81] [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Notifications (/notifications)
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Reporting Hub (/reporting)
+Timeout waiting for page load on /reporting
+
+[1A[2K[53/81] [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: PDF Viewer (/pdf-viewer)
+[1A[2K  50) [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Browse Templates (/browse-templates) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K  51) [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Reporting Hub (/reporting) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[54/81] [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Transport Engineering (/transport-engineering)
+[1A[2K[55/81] [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Login (/login)
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Notifications (/notifications)
+Navigating to /notifications...
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: PDF Viewer (/pdf-viewer)
+Navigating to /pdf-viewer...
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Notifications (/notifications)
+Timeout waiting for page load on /notifications
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Login (/login)
+Navigating to /login...
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Transport Engineering (/transport-engineering)
+Navigating to /transport-engineering...
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: PDF Viewer (/pdf-viewer)
+Timeout waiting for page load on /pdf-viewer
+
+[1A[2K  52) [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Notifications (/notifications) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Login (/login)
+Timeout waiting for page load on /login
+
+[1A[2K  53) [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Login (/login) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Transport Engineering (/transport-engineering)
+Timeout waiting for page load on /transport-engineering
+
+[1A[2K  54) [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: PDF Viewer (/pdf-viewer) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[56/81] [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Signup (/signup)
+[1A[2K[57/81] [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Forgot Password (/forgot_password)
+[1A[2K[58/81] [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Dashboard (/dashboard)
+[1A[2K  55) [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Transport Engineering (/transport-engineering) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[59/81] [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Routes List (/routes)
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Routes List (/routes)
+Navigating to /routes...
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Signup (/signup)
+Navigating to /signup...
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Forgot Password (/forgot_password)
+Navigating to /forgot_password...
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Dashboard (/dashboard)
+Navigating to /dashboard...
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Forgot Password (/forgot_password)
+Timeout waiting for page load on /forgot_password
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Dashboard (/dashboard)
+Timeout waiting for page load on /dashboard
+
+[1A[2K  56) [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Forgot Password (/forgot_password) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Signup (/signup)
+Timeout waiting for page load on /signup
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Routes List (/routes)
+Timeout waiting for page load on /routes
+
+[1A[2K  57) [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Routes List (/routes) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K  58) [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Dashboard (/dashboard) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K  59) [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Signup (/signup) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[60/81] [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Add Manual Route (/manual-routes/add)
+[1A[2K[61/81] [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Route Viewer (ID: 999) (/routes/999)
+[1A[2K[62/81] [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Manual Routes List (/manual-routes)
+[1A[2K[63/81] [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Edit Manual Route (ID: 999) (/manual-routes/999/edit)
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Add Manual Route (/manual-routes/add)
+Navigating to /manual-routes/add...
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Manual Routes List (/manual-routes)
+Navigating to /manual-routes...
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Edit Manual Route (ID: 999) (/manual-routes/999/edit)
+Navigating to /manual-routes/999/edit...
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Route Viewer (ID: 999) (/routes/999)
+Navigating to /routes/999...
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Edit Manual Route (ID: 999) (/manual-routes/999/edit)
+Timeout waiting for page load on /manual-routes/999/edit
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Manual Routes List (/manual-routes)
+Timeout waiting for page load on /manual-routes
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Add Manual Route (/manual-routes/add)
+Timeout waiting for page load on /manual-routes/add
+
+[1A[2K  60) [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Manual Routes List (/manual-routes) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K  61) [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Edit Manual Route (ID: 999) (/manual-routes/999/edit) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Route Viewer (ID: 999) (/routes/999)
+Timeout waiting for page load on /routes/999
+
+[1A[2K  62) [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Add Manual Route (/manual-routes/add) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K  63) [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Route Viewer (ID: 999) (/routes/999) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[64/81] [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Edit Planned Route (ID: 888) (/planned-routes/888/edit)
+[1A[2K[65/81] [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Planned Routes List (/planned-routes)
+[1A[2K[66/81] [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Add Planned Route (/planned-routes/add)
+[1A[2K[67/81] [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: View Planned Route (ID: 888) (/planned-routes/888)
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Add Planned Route (/planned-routes/add)
+Navigating to /planned-routes/add...
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Edit Planned Route (ID: 888) (/planned-routes/888/edit)
+Navigating to /planned-routes/888/edit...
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Planned Routes List (/planned-routes)
+Navigating to /planned-routes...
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: View Planned Route (ID: 888) (/planned-routes/888)
+Navigating to /planned-routes/888...
+
+[1A[2KTimeout waiting for page load on /planned-routes/888
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Edit Planned Route (ID: 888) (/planned-routes/888/edit)
+Timeout waiting for page load on /planned-routes/888/edit
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Planned Routes List (/planned-routes)
+Timeout waiting for page load on /planned-routes
+
+[1A[2K  64) [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: View Planned Route (ID: 888) (/planned-routes/888) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Add Planned Route (/planned-routes/add)
+Timeout waiting for page load on /planned-routes/add
+
+[1A[2K  65) [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Edit Planned Route (ID: 888) (/planned-routes/888/edit) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K  66) [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Planned Routes List (/planned-routes) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K  67) [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Add Planned Route (/planned-routes/add) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[68/81] [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Survey Execution (ID: 777) (/surveys/777/overview)
+[1A[2K[69/81] [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Survey Report (ID: 777) (/surveys/777/report)
+[1A[2K[70/81] [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Templates Admin (/admin/templates)
+[1A[2K[71/81] [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Users Admin (/admin/users)
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Users Admin (/admin/users)
+Navigating to /admin/users...
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Survey Execution (ID: 777) (/surveys/777/overview)
+Navigating to /surveys/777/overview...
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Templates Admin (/admin/templates)
+Navigating to /admin/templates...
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Survey Report (ID: 777) (/surveys/777/report)
+Navigating to /surveys/777/report...
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Survey Execution (ID: 777) (/surveys/777/overview)
+Timeout waiting for page load on /surveys/777/overview
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Users Admin (/admin/users)
+Timeout waiting for page load on /admin/users
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Templates Admin (/admin/templates)
+Timeout waiting for page load on /admin/templates
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Survey Report (ID: 777) (/surveys/777/report)
+Timeout waiting for page load on /surveys/777/report
+
+[1A[2K  68) [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Users Admin (/admin/users) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K  69) [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Survey Execution (ID: 777) (/surveys/777/overview) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K  70) [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Survey Report (ID: 777) (/surveys/777/report) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K  71) [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Templates Admin (/admin/templates) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[72/81] [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Profile (/user/profile)
+[1A[2K[73/81] [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Admin Tools (/admin/tools)
+[1A[2K[74/81] [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Organizations Admin (/admin/organizations)
+[1A[2K[75/81] [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Settings (/user/settings)
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Admin Tools (/admin/tools)
+Navigating to /admin/tools...
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Profile (/user/profile)
+Navigating to /user/profile...
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Settings (/user/settings)
+Navigating to /user/settings...
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Organizations Admin (/admin/organizations)
+Navigating to /admin/organizations...
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Profile (/user/profile)
+Timeout waiting for page load on /user/profile
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Admin Tools (/admin/tools)
+Timeout waiting for page load on /admin/tools
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Organizations Admin (/admin/organizations)
+Timeout waiting for page load on /admin/organizations
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Settings (/user/settings)
+Timeout waiting for page load on /user/settings
+
+[1A[2K  72) [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Profile (/user/profile) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K  73) [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Admin Tools (/admin/tools) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K  74) [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Organizations Admin (/admin/organizations) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K  75) [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Settings (/user/settings) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[76/81] [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Subscription (/user/subscription)
+[1A[2K[77/81] [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Browse Templates (/browse-templates)
+[1A[2K[78/81] [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Reporting Hub (/reporting)
+[1A[2K[79/81] [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Notifications (/notifications)
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Reporting Hub (/reporting)
+Navigating to /reporting...
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Subscription (/user/subscription)
+Navigating to /user/subscription...
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Notifications (/notifications)
+Navigating to /notifications...
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Browse Templates (/browse-templates)
+Navigating to /browse-templates...
+
+[1A[2KTimeout waiting for page load on /browse-templates
+
+[1A[2K  76) [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Browse Templates (/browse-templates) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Subscription (/user/subscription)
+Timeout waiting for page load on /user/subscription
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Reporting Hub (/reporting)
+Timeout waiting for page load on /reporting
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Notifications (/notifications)
+Timeout waiting for page load on /notifications
+
+[1A[2K  77) [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Reporting Hub (/reporting) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K  78) [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Notifications (/notifications) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K  79) [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Subscription (/user/subscription) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K[80/81] [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: PDF Viewer (/pdf-viewer)
+[1A[2K[81/81] [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Transport Engineering (/transport-engineering)
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Transport Engineering (/transport-engineering)
+Navigating to /transport-engineering...
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: PDF Viewer (/pdf-viewer)
+Navigating to /pdf-viewer...
+
+[1A[2KTimeout waiting for page load on /pdf-viewer
+
+[1A[2K[webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Transport Engineering (/transport-engineering)
+Timeout waiting for page load on /transport-engineering
+
+[1A[2K  80) [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: PDF Viewer (/pdf-viewer) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K  81) [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Transport Engineering (/transport-engineering) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('#app, .app-layout, body')
+    Expected: visible
+    Error: strict mode violation: locator('#app, .app-layout, body') resolved to 2 elements:
+        1) <body>…</body> aka locator('body')
+        2) <div id="app"></div> aka locator('#app')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('#app, .app-layout, body')[22m
+
+
+      162 |                 // Wait for the app container or a specific route container
+      163 |                 // Using a generic locator that should exist on all valid pages
+    > 164 |                 await expect(page.locator('#app, .app-layout, body')).toBeVisible();
+          |                                                                       ^
+      165 |
+      166 |                 // Allow network checks to settle
+      167 |                 await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { });
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:164:71
+
+
+[1A[2K  81 failed
+    [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Login (/login) 
+    [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Signup (/signup) 
+    [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Forgot Password (/forgot_password) 
+    [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Dashboard (/dashboard) 
+    [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Routes List (/routes) 
+    [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Route Viewer (ID: 999) (/routes/999) 
+    [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Manual Routes List (/manual-routes) 
+    [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Add Manual Route (/manual-routes/add) 
+    [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Edit Manual Route (ID: 999) (/manual-routes/999/edit) 
+    [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Planned Routes List (/planned-routes) 
+    [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Add Planned Route (/planned-routes/add) 
+    [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: View Planned Route (ID: 888) (/planned-routes/888) 
+    [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Edit Planned Route (ID: 888) (/planned-routes/888/edit) 
+    [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Survey Execution (ID: 777) (/surveys/777/overview) 
+    [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Survey Report (ID: 777) (/surveys/777/report) 
+    [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Users Admin (/admin/users) 
+    [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Templates Admin (/admin/templates) 
+    [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Organizations Admin (/admin/organizations) 
+    [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Admin Tools (/admin/tools) 
+    [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Profile (/user/profile) 
+    [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Settings (/user/settings) 
+    [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Subscription (/user/subscription) 
+    [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Reporting Hub (/reporting) 
+    [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Browse Templates (/browse-templates) 
+    [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Notifications (/notifications) 
+    [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: PDF Viewer (/pdf-viewer) 
+    [chromium] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Transport Engineering (/transport-engineering) 
+    [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Login (/login) 
+    [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Signup (/signup) 
+    [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Forgot Password (/forgot_password) 
+    [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Dashboard (/dashboard) 
+    [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Routes List (/routes) 
+    [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Route Viewer (ID: 999) (/routes/999) 
+    [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Manual Routes List (/manual-routes) 
+    [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Add Manual Route (/manual-routes/add) 
+    [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Edit Manual Route (ID: 999) (/manual-routes/999/edit) 
+    [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Planned Routes List (/planned-routes) 
+    [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Add Planned Route (/planned-routes/add) 
+    [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: View Planned Route (ID: 888) (/planned-routes/888) 
+    [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Edit Planned Route (ID: 888) (/planned-routes/888/edit) 
+    [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Survey Execution (ID: 777) (/surveys/777/overview) 
+    [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Survey Report (ID: 777) (/surveys/777/report) 
+    [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Users Admin (/admin/users) 
+    [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Templates Admin (/admin/templates) 
+    [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Organizations Admin (/admin/organizations) 
+    [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Admin Tools (/admin/tools) 
+    [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Profile (/user/profile) 
+    [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Settings (/user/settings) 
+    [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Subscription (/user/subscription) 
+    [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Reporting Hub (/reporting) 
+    [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Browse Templates (/browse-templates) 
+    [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Notifications (/notifications) 
+    [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: PDF Viewer (/pdf-viewer) 
+    [firefox] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Transport Engineering (/transport-engineering) 
+    [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Login (/login) 
+    [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Signup (/signup) 
+    [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Forgot Password (/forgot_password) 
+    [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Dashboard (/dashboard) 
+    [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Routes List (/routes) 
+    [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Route Viewer (ID: 999) (/routes/999) 
+    [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Manual Routes List (/manual-routes) 
+    [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Add Manual Route (/manual-routes/add) 
+    [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Edit Manual Route (ID: 999) (/manual-routes/999/edit) 
+    [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Planned Routes List (/planned-routes) 
+    [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Add Planned Route (/planned-routes/add) 
+    [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: View Planned Route (ID: 888) (/planned-routes/888) 
+    [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Edit Planned Route (ID: 888) (/planned-routes/888/edit) 
+    [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Survey Execution (ID: 777) (/surveys/777/overview) 
+    [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Survey Report (ID: 777) (/surveys/777/report) 
+    [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Users Admin (/admin/users) 
+    [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Templates Admin (/admin/templates) 
+    [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Organizations Admin (/admin/organizations) 
+    [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Admin Tools (/admin/tools) 
+    [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Profile (/user/profile) 
+    [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Settings (/user/settings) 
+    [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Subscription (/user/subscription) 
+    [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Reporting Hub (/reporting) 
+    [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Browse Templates (/browse-templates) 
+    [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Notifications (/notifications) 
+    [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: PDF Viewer (/pdf-viewer) 
+    [webkit] › tests/e2e/autonomous_crawler.spec.ts:265:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Transport Engineering (/transport-engineering) 

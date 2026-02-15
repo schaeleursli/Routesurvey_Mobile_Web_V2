@@ -1,0 +1,108 @@
+services:
+  db:
+    image: supabase/postgres:15.1.0.147
+    container_name: supabase_db
+    environment:
+      POSTGRES_PASSWORD: supabase_password
+      POSTGRES_DB: postgres
+    ports:
+      - "54322:5432"
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - supabase_db_data:/var/lib/postgresql/data
+
+  rest:
+    image: postgrest/postgrest:v12.0.2
+    container_name: supabase_rest
+    environment:
+      PGRST_DB_URI: postgres://postgres:supabase_password@db:5432/postgres
+      PGRST_DB_ANON_ROLE: anon
+      PGRST_DB_SCHEMA: public
+      PGRST_JWT_SECRET: super-secret-jwt-token-with-at-least-32-characters-long
+    depends_on:
+      db:
+        condition: service_healthy
+    # NOTE: PostgREST is NOT exposed directly to the host anymore.
+    # All traffic must go through Kong Gateway (http://localhost:8000/rest/v1)
+    # This prevents browser requests like /favicon.png from hitting PostgREST
+
+  auth:
+    image: supabase/gotrue:v2.143.0
+    container_name: supabase_auth
+    environment:
+      GOTRUE_DB_DRIVER: postgres
+      GOTRUE_DB_DATABASE_URL: postgres://postgres:supabase_password@db:5432/postgres?sslmode=disable
+      GOTRUE_SITE_URL: http://localhost:5173
+      GOTRUE_JWT_SECRET: super-secret-jwt-token-with-at-least-32-characters-long
+      GOTRUE_JWT_EXP: 3600
+      GOTRUE_EXTERNAL_EMAIL_ENABLED: "true"
+      GOTRUE_MAILER_AUTOCONFIRM: "true"
+      API_EXTERNAL_URL: http://localhost:9999
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "9999:9999"
+
+  storage:
+    image: supabase/storage-api:v0.46.4
+    container_name: supabase_storage
+    environment:
+      POSTGREST_URL: http://rest:3000
+      DATABASE_URL: postgres://postgres:supabase_password@db:5432/postgres
+      PGRST_JWT_SECRET: super-secret-jwt-token-with-at-least-32-characters-long
+      STORAGE_BACKEND: file
+      FILE_STORAGE_BACKEND_PATH: /var/lib/storage
+      ANON_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiJ9.ZopqoUt20nEV9cklpv9e3yw3PVyZLmKs5qLD6nGL1SI
+      SERVICE_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoic2VydmljZV9yb2xlIn0.M2d2z4SFn5C7HlJlaSLfrzuYim9nbY_XI40uWFN3hEE
+    depends_on:
+      db:
+        condition: service_healthy
+      rest:
+        condition: service_started
+    ports:
+      - "5001:5000"
+    volumes:
+      - ./supabase/storage:/var/lib/storage
+
+  # ========================================================================
+  # Kong API Gateway
+  # ========================================================================
+  # Kong acts as the single entry point for all API traffic.
+  # Browser/public traffic should ONLY access http://localhost:8000
+  #
+  # Routes:
+  #   - http://localhost:8000/rest/v1/*    -> PostgREST (Internal)
+  #   - http://localhost:8000/auth/v1/*    -> GoTrue Auth (Internal)
+  #   - http://localhost:8000/storage/v1/* -> Storage API (Internal)
+  #
+  # This prevents PostgREST from receiving unintended requests like /favicon.png
+  # ========================================================================
+  kong:
+    image: kong:3.4
+    container_name: supabase_kong
+    environment:
+      KONG_DATABASE: "off"
+      KONG_DECLARATIVE_CONFIG: /kong/kong.yml
+      KONG_PROXY_ACCESS_LOG: /dev/stdout
+      KONG_ADMIN_ACCESS_LOG: /dev/stdout
+      KONG_PROXY_ERROR_LOG: /dev/stderr
+      KONG_ADMIN_ERROR_LOG: /dev/stderr
+      KONG_ADMIN_LISTEN: "0.0.0.0:8001"
+      KONG_PROXY_LISTEN: "0.0.0.0:8000"
+    depends_on:
+      - rest
+      - auth
+      - storage
+    ports:
+      - "8000:8000" # API Gateway (Public Entry Point)
+      - "8001:8001" # Kong Admin API (Optional, for debugging)
+    volumes:
+      - ./kong/kong.yml:/kong/kong.yml:ro
+
+volumes:
+  supabase_db_data:

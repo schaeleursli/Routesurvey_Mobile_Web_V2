@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog API Test - FastAPI</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            background: #f5f5f5;
+        }
+
+        .container {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        .test-section {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f9f9f9;
+            border-left: 4px solid #4CAF50;
+            border-radius: 4px;
+        }
+
+        .test-section h2 {
+            margin-top: 0;
+            color: #4CAF50;
+        }
+
+        .status {
+            padding: 10px 15px;
+            border-radius: 4px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        .status.success {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .status.error {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .status.info {
+            background: #d1ecf1;
+            color: #0c5460;
+        }
+
+        pre {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+            font-size: 13px;
+        }
+
+        .item-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .item-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 15px;
+        }
+
+        .item-card h4 {
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+
+        .item-meta {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-right: 5px;
+        }
+
+        .badge.tractor {
+            background: #e3f2fd;
+            color: #1976d2;
+        }
+
+        .badge.module {
+            background: #f3e5f5;
+            color: #7b1fa2;
+        }
+
+        .badge.spmt {
+            background: #fff3e0;
+            color: #e65100;
+        }
+
+        .badge.assembly_preset {
+            background: #e8f5e9;
+            color: #388e3c;
+        }
+
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+
+        button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🚛 Equipment Catalog API Test</h1>
+        <p><strong>FastAPI Backend:</strong> http://localhost:8002/api/v1/catalog/items</p>
+
+        <div class="test-section">
+            <h2>Test Controls</h2>
+            <button onclick="testAllItems()">Test: Fetch All Items</button>
+            <button onclick="testTractors()">Test: Fetch Tractors</button>
+            <button onclick="testModules()">Test: Fetch Modules</button>
+            <button onclick="testPresets()">Test: Fetch Assembly Presets</button>
+        </div>
+
+        <div id="results"></div>
+    </div>
+
+    <script type="module">
+        const API_BASE = 'http://localhost:8002';
+        const resultsDiv = document.getElementById('results');
+        
+        window.testAllItems = async function() {
+            showStatus('Fetching all catalog items...', 'info');
+            
+            try {
+                const response = await fetch(`${API_BASE}/api/v1/catalog/items`);
+                const data = await response.json();
+                
+                const byCategory = data.reduce((acc, item) => {
+                    acc[item.category] = (acc[item.category] || 0) + 1;
+                    return acc;
+                }, {});
+                
+                showStatus(`✅ Success! Found ${data.length} total items`, 'success');
+                
+                const breakdown = Object.entries(byCategory)
+                    .map(([cat, count]) => `${cat}: ${count}`)
+                    .join(', ');
+                
+                resultsDiv.innerHTML += `
+                    <div class="test-section">
+                        <h2>All Catalog Items (${data.length})</h2>
+                        <p><strong>Breakdown:</strong> ${breakdown}</p>
+                        <div class="item-grid">
+                            ${data.slice(0, 12).map(item => `
+                                <div class="item-card">
+                                    <h4>${item.name}</h4>
+                                    <div class="item-meta">
+                                        <span class="badge ${item.category}">${item.category}</span><br>
+                                        ${item.manufacturer || ''} ${item.model || ''}<br>
+                                        Region: ${item.tags?.region || 'N/A'}
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                        ${data.length > 12 ? `<p style="margin-top: 15px; color: #666; font-size: 13px;">... and ${data.length - 12} more items</p>` : ''}
+                    </div>
+                `;
+            } catch (error) {
+                showStatus(`❌ Error: ${error.message}`, 'error');
+                console.error(error);
+            }
+        };
+        
+        window.testTractors = async function() {
+            showStatus('Fetching tractors...', 'info');
+            
+            try {
+                const response = await fetch(`${API_BASE}/api/v1/catalog/items?category=tractor&published_only=true`);
+                const data = await response.json();
+                
+                showStatus(`✅ Found ${data.length} tractors`, 'success');
+                
+                resultsDiv.innerHTML += `
+                    <div class="test-section">
+                        <h2>Tractors (${data.length})</h2>
+                        <div class="item-grid">
+                            ${data.map(item => `
+                                <div class="item-card">
+                                    <h4>${item.name}</h4>
+                                    <div class="item-meta">
+                                        ${item.manufacturer} ${item.model}<br>
+                                       Config: ${item.spec?.axleConfig || 'N/A'}<br>
+                                        Region: ${item.tags?.region || 'N/A'}
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+            } catch (error) {
+                showStatus(`❌ Error: ${error.message}`, 'error');
+                console.error(error);
+            }
+        };
+        
+        window.testModules = async function() {
+            showStatus('Fetching trailer modules...', 'info');
+            
+            try {
+                const response = await fetch(`${API_BASE}/api/v1/catalog/items?category=module&published_only=true`);
+                const data = await response.json();
+                
+                showStatus(`✅ Found ${data.length} trailer modules`, 'success');
+                
+                resultsDiv.innerHTML += `
+                    <div class="test-section">
+                        <h2>Trailer Modules (${data.length})</h2>
+                        <p>First 10 modules:</p>
+                        <div class="item-grid">
+                            ${data.slice(0, 10).map(item => `
+                                <div class="item-card">
+                                    <h4>${item.name}</h4>
+                                    <div class="item-meta">
+                                        Type: ${item.spec?.kind || 'N/A'}<br>
+                                        Length: ${item.spec?.lengthM || 'N/A'}m<br>
+                                        Region: ${item.tags?.region || 'N/A'}
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+            } catch (error) {
+                showStatus(`❌ Error: ${error.message}`, 'error');
+                console.error(error);
+            }
+        };
+        
+        window.testPresets = async function() {
+            showStatus('Fetching assembly presets...', 'info');
+            
+            try {
+                const response = await fetch(`${API_BASE}/api/v1/catalog/items?category=assembly_preset&published_only=true`);
+                const data = await response.json();
+                
+                showStatus(`✅ Found ${data.length} assembly presets`, 'success');
+                
+                resultsDiv.innerHTML += `
+                    <div class="test-section">
+                        <h2>Assembly Presets (${data.length})</h2>
+                        <div class="item-grid">
+                            ${data.map(item => `
+                                <div class="item-card">
+                                    <h4>${item.name}</h4>
+                                    <div class="item-meta">
+                                        Components: ${item.spec?.refs?.length || 0}<br>
+                                        Region: ${item.tags?.region || 'N/A'}<br>
+                                        ${item.spec?.assist ? '🔄 Push-Pull' : ''}
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+            } catch (error) {
+                showStatus(`❌ Error: ${error.message}`, 'error');
+                console.error(error);
+            }
+        };
+        
+        function showStatus(message, type) {
+            const statusEl = document.createElement('div');
+            statusEl.className = `status ${type}`;
+            statusEl.textContent = message;
+            resultsDiv.insertBefore(statusEl, resultsDiv.firstChild);
+        }
+        
+        // Auto-run on load
+        window.addEventListener('load', () => {
+            testAllItems();
+        });
+    </script>
+</body>
+
+</html>

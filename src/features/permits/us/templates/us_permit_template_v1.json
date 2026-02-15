@@ -1,0 +1,67 @@
+{
+    "version": "1.0.0",
+    "blocks": [
+        {
+            "id": "permit_summary",
+            "type": "permit_summary",
+            "title": "Permit Summary",
+            "required": true
+        },
+        {
+            "id": "vehicle_load",
+            "type": "vehicle_load",
+            "title": "Vehicle & Load",
+            "required": true
+        },
+        {
+            "id": "route_definition",
+            "type": "route_definition",
+            "title": "Route Definition",
+            "required": false
+        },
+        {
+            "id": "clearance_obstructions",
+            "type": "clearance_obstructions",
+            "title": "Clearances & Obstructions",
+            "required": false
+        },
+        {
+            "id": "bridge_list",
+            "type": "bridge_list",
+            "title": "Bridge List",
+            "required": false
+        },
+        {
+            "id": "escort_windows",
+            "type": "escort_windows",
+            "title": "Escort & Travel Windows",
+            "required": false
+        },
+        {
+            "id": "traction_braking",
+            "type": "traction_braking",
+            "title": "Traction & Braking",
+            "required": false,
+            "conditional": true
+        },
+        {
+            "id": "swept_path",
+            "type": "swept_path",
+            "title": "Swept-Path Analysis",
+            "required": false,
+            "conditional": true
+        },
+        {
+            "id": "evidence_annex",
+            "type": "evidence_annex",
+            "title": "Evidence & Attachments",
+            "required": false
+        },
+        {
+            "id": "state_addenda",
+            "type": "state_addenda",
+            "title": "State Requirements",
+            "required": true
+        }
+    ]
+}

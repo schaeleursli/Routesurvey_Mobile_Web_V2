@@ -1,0 +1,1916 @@
+{
+  "config": {
+    "configFile": "/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/playwright.config.ts",
+    "rootDir": "/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.57.0",
+    "workers": 4,
+    "webServer": {
+      "command": "npm run dev",
+      "url": "http://localhost:5173",
+      "reuseExistingServer": true,
+      "timeout": 120000
+    }
+  },
+  "suites": [
+    {
+      "title": "autonomous_crawler.spec.ts",
+      "file": "autonomous_crawler.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Autonomous Crawler & Screen Protocol",
+          "file": "autonomous_crawler.spec.ts",
+          "line": 100,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Proto-Screen: Login (/login)",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 32331,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts",
+                            "column": 41,
+                            "line": 154
+                          },
+                          "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5173/login\", waiting until \"load\"\u001b[22m\n\n\n  152 |\n  153 |             console.log(`Navigating to ${route.path}...`);\n> 154 |             const response = await page.goto(route.path);\n      |                                         ^\n  155 |\n  156 |             // 1. Basic Status Check\n  157 |             // Note: Single Page Apps might return 200 for everything and handle 404 client-side\n    at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:154:41"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Navigating to /login...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-27T02:35:37.321Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a2056b691621522f288b-d30d2e7540f752df0883",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Signup (/signup)",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "timedOut",
+                      "duration": 33108,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts",
+                            "column": 41,
+                            "line": 154
+                          },
+                          "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5173/signup\", waiting until \"load\"\u001b[22m\n\n\n  152 |\n  153 |             console.log(`Navigating to ${route.path}...`);\n> 154 |             const response = await page.goto(route.path);\n      |                                         ^\n  155 |\n  156 |             // 1. Basic Status Check\n  157 |             // Note: Single Page Apps might return 200 for everything and handle 404 client-side\n    at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:154:41"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Navigating to /signup...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-27T02:35:36.303Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a2056b691621522f288b-a3b1df75e1a281e12ca8",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Forgot Password (/forgot_password)",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "timedOut",
+                      "duration": 31434,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts",
+                            "column": 41,
+                            "line": 154
+                          },
+                          "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5173/forgot_password\", waiting until \"load\"\u001b[22m\n\n\n  152 |\n  153 |             console.log(`Navigating to ${route.path}...`);\n> 154 |             const response = await page.goto(route.path);\n      |                                         ^\n  155 |\n  156 |             // 1. Basic Status Check\n  157 |             // Note: Single Page Apps might return 200 for everything and handle 404 client-side\n    at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:154:41"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Navigating to /forgot_password...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-27T02:35:41.201Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a2056b691621522f288b-b42face99184758a1f89",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Dashboard (/dashboard)",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "timedOut",
+                      "duration": 31965,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts",
+                            "column": 41,
+                            "line": 154
+                          },
+                          "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5173/dashboard\", waiting until \"load\"\u001b[22m\n\n\n  152 |\n  153 |             console.log(`Navigating to ${route.path}...`);\n> 154 |             const response = await page.goto(route.path);\n      |                                         ^\n  155 |\n  156 |             // 1. Basic Status Check\n  157 |             // Note: Single Page Apps might return 200 for everything and handle 404 client-side\n    at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/autonomous_crawler.spec.ts:154:41"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Navigating to /dashboard...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-27T02:35:36.777Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a2056b691621522f288b-74a2b83d465fdfa449bf",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Routes List (/routes)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "interrupted",
+                      "duration": 11,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-27T02:36:51.056Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-20abca999feff28532d5",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Route Viewer (ID: 999) (/routes/999)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 3,
+                      "status": "skipped",
+                      "duration": 1,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-27T02:36:53.585Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-71b8b2842b1cf25e11f7",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Manual Routes List (/manual-routes)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 2,
+                      "status": "skipped",
+                      "duration": 1,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-27T02:36:54.541Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-590b67cdebc47f29b22d",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Add Manual Route (/manual-routes/add)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-2d95faae0aaab3aeab94",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Edit Manual Route (ID: 999) (/manual-routes/999/edit)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-d5267838723377e09a3a",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Planned Routes List (/planned-routes)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-ba928633623d44d2116c",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Add Planned Route (/planned-routes/add)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-992f7a8b5243a45aeec9",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: View Planned Route (ID: 888) (/planned-routes/888)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-bfc12dc7cbb5710f451f",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Edit Planned Route (ID: 888) (/planned-routes/888/edit)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-37f3d6cc2139698b7bce",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Survey Execution (ID: 777) (/surveys/777/overview)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-d4abeef25e558c407229",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Survey Report (ID: 777) (/surveys/777/report)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-4a407854723ff8127328",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Users Admin (/admin/users)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-a8a4a73bab1b575cfec3",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Templates Admin (/admin/templates)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-58b5d71782a7fe0470bd",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Organizations Admin (/admin/organizations)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-f362c7d1ed2ad7f53d84",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Admin Tools (/admin/tools)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-6a84d9b7730e3e2370b8",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: User Profile (/user/profile)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-a60a269f23d735fedb86",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: User Settings (/user/settings)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-234b5cce91c209b1750c",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: User Subscription (/user/subscription)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-b9b10b94ca3a1ab5cf48",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Reporting Hub (/reporting)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-19b8df1b7ea7ef285576",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Browse Templates (/browse-templates)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-74d2487c8e0fb825b034",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Notifications (/notifications)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-45e29a705c96729077d7",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: PDF Viewer (/pdf-viewer)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-f69c769ba45d1a8dfeed",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Transport Engineering (/transport-engineering)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-880feafb6930f11c5c8b",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Login (/login)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-cfb78239846f6d4d205b",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Signup (/signup)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-c6fd5a3bcb0f4dca8a08",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Forgot Password (/forgot_password)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-0a700ffb83fb8bb6d2be",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Dashboard (/dashboard)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-67a3b8d3216dd779ac11",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Routes List (/routes)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-afda9889e6b19f7aeba8",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Route Viewer (ID: 999) (/routes/999)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-8b2c9b3bede6f665067c",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Manual Routes List (/manual-routes)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-6d63c58efc975e7a473d",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Add Manual Route (/manual-routes/add)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-e163e07db5560053fabc",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Edit Manual Route (ID: 999) (/manual-routes/999/edit)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-2098465295b26957ea4b",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Planned Routes List (/planned-routes)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-569fc5f128f11a995591",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Add Planned Route (/planned-routes/add)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-7c31b445d40bf97b7ced",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: View Planned Route (ID: 888) (/planned-routes/888)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-daf03333b2c8c777c19d",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Edit Planned Route (ID: 888) (/planned-routes/888/edit)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-63e909423f9137cddb24",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Survey Execution (ID: 777) (/surveys/777/overview)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-bd2b1cca872493373a9d",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Survey Report (ID: 777) (/surveys/777/report)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-398f9ee5bfe30fb8df82",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Users Admin (/admin/users)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-c9892b56588871842776",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Templates Admin (/admin/templates)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-d702f7680cba1e19cd8c",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Organizations Admin (/admin/organizations)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-ff4cb0883f9737d07966",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Admin Tools (/admin/tools)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-c063bcad07b0d691f3f3",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: User Profile (/user/profile)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-25b1306b9d772158a8a1",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: User Settings (/user/settings)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-8975b252a9bc546972dc",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: User Subscription (/user/subscription)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-d21156bf7cd47266c8b5",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Reporting Hub (/reporting)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-01f099ec7c5c1bd77385",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Browse Templates (/browse-templates)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-5c74361595530e10ccbd",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Notifications (/notifications)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-67995fd25ffc9e3c5b03",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: PDF Viewer (/pdf-viewer)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-2eae58b97ab90a9d5efb",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Transport Engineering (/transport-engineering)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-7c51748518bffc7abedb",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Login (/login)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-ca62247df47efaa67bb4",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Signup (/signup)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-fc410bafd1e5c2aa23b9",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Forgot Password (/forgot_password)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-fcb35e23c3290047f043",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Dashboard (/dashboard)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-41e32e77292a8834ca84",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Routes List (/routes)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-0ef5e0c0af9a28ad0adc",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Route Viewer (ID: 999) (/routes/999)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-1fdf79e43c1bf7f3d235",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Manual Routes List (/manual-routes)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-352201deb483561bd95f",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Add Manual Route (/manual-routes/add)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-8e7482aa719d4f501200",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Edit Manual Route (ID: 999) (/manual-routes/999/edit)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-8ce33d8044abc1f2f56a",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Planned Routes List (/planned-routes)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-041c0945866db87da911",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Add Planned Route (/planned-routes/add)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-e9d9548c3ed6f5b72253",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: View Planned Route (ID: 888) (/planned-routes/888)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-d29f95589202a604b259",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Edit Planned Route (ID: 888) (/planned-routes/888/edit)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-3e88990ffee307d02efe",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Survey Execution (ID: 777) (/surveys/777/overview)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-a83612d868bc8662aa10",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Survey Report (ID: 777) (/surveys/777/report)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-63499a2a72dfe9f1bc37",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Users Admin (/admin/users)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-1fb1d4aa0035320e293d",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Templates Admin (/admin/templates)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-634118128d654870ffda",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Organizations Admin (/admin/organizations)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-27febe62b35a765f2d73",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Admin Tools (/admin/tools)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-6089afe4ebf64f224449",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: User Profile (/user/profile)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-66aa969fb5581a1acfa0",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: User Settings (/user/settings)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-6a9d82686137c997f9a2",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: User Subscription (/user/subscription)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-312ff44d6270c80d9213",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Reporting Hub (/reporting)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-29e9cb3cecb681a88400",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Browse Templates (/browse-templates)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-76f915a8884c0f639665",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Notifications (/notifications)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-a7b2a2456048eac5c244",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: PDF Viewer (/pdf-viewer)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-0d0ef9435a15de3c8bd8",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            },
+            {
+              "title": "Proto-Screen: Transport Engineering (/transport-engineering)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a2056b691621522f288b-1f12ac0ec9328cc82ac8",
+              "file": "autonomous_crawler.spec.ts",
+              "line": 265,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-01-27T02:34:51.794Z",
+    "duration": 122966.50399999999,
+    "expected": 0,
+    "skipped": 77,
+    "unexpected": 4,
+    "flaky": 0
+  }
+}

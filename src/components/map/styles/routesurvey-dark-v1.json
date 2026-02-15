@@ -1,0 +1,531 @@
+{
+    "version": 8,
+    "name": "RouteSurvey Dark v1",
+    "metadata": {
+        "rs:spec": "routesurvey-dark-v1",
+        "rs:notes": "Dark base optimized for engineering overlays: route (yellow), power lines (red), bridges"
+    },
+    "center": [
+        0,
+        0
+    ],
+    "zoom": 3,
+    "bearing": 0,
+    "pitch": 0,
+    "glyphs": "https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf",
+    "sprite": "https://demotiles.maplibre.org/styles/osm-bright-gl-style/sprite",
+    "sources": {
+        "osm": {
+            "type": "vector",
+            "tiles": [
+                "https://api.maptiler.com/tiles/v3/{z}/{x}/{y}.pbf?key=YOUR_API_KEY"
+            ],
+            "minzoom": 0,
+            "maxzoom": 14
+        },
+        "route": {
+            "type": "geojson",
+            "data": {
+                "type": "FeatureCollection",
+                "features": []
+            }
+        },
+        "route_bridges": {
+            "type": "geojson",
+            "data": {
+                "type": "FeatureCollection",
+                "features": []
+            }
+        },
+        "powerlines": {
+            "type": "geojson",
+            "data": {
+                "type": "FeatureCollection",
+                "features": []
+            }
+        }
+    },
+    "layers": [
+        {
+            "id": "background",
+            "type": "background",
+            "paint": {
+                "background-color": "#0F1116"
+            }
+        },
+        {
+            "id": "water",
+            "type": "fill",
+            "source": "osm",
+            "source-layer": "water",
+            "paint": {
+                "fill-color": "#121826",
+                "fill-opacity": 1
+            }
+        },
+        {
+            "id": "waterway",
+            "type": "line",
+            "source": "osm",
+            "source-layer": "waterway",
+            "paint": {
+                "line-color": "#1A2233",
+                "line-width": [
+                    "interpolate",
+                    [
+                        "linear"
+                    ],
+                    [
+                        "zoom"
+                    ],
+                    8,
+                    0.6,
+                    12,
+                    1.2,
+                    16,
+                    2.0
+                ],
+                "line-opacity": 0.9
+            }
+        },
+        {
+            "id": "landuse",
+            "type": "fill",
+            "source": "osm",
+            "source-layer": "landuse",
+            "paint": {
+                "fill-color": [
+                    "match",
+                    [
+                        "get",
+                        "class"
+                    ],
+                    "park",
+                    "#101B16",
+                    "grass",
+                    "#101B16",
+                    "wood",
+                    "#0E1612",
+                    "industrial",
+                    "#12141A",
+                    "residential",
+                    "#10131A",
+                    "#0F1116"
+                ],
+                "fill-opacity": 0.85
+            }
+        },
+        {
+            "id": "buildings",
+            "type": "fill",
+            "source": "osm",
+            "source-layer": "building",
+            "minzoom": 13,
+            "paint": {
+                "fill-color": "#181B22",
+                "fill-opacity": 0.7
+            }
+        },
+        {
+            "id": "roads-casing",
+            "type": "line",
+            "source": "osm",
+            "source-layer": "transportation",
+            "filter": [
+                "==",
+                [
+                    "geometry-type"
+                ],
+                "LineString"
+            ],
+            "paint": {
+                "line-color": "#0B0D12",
+                "line-width": [
+                    "interpolate",
+                    [
+                        "linear"
+                    ],
+                    [
+                        "zoom"
+                    ],
+                    6,
+                    0.2,
+                    10,
+                    1.2,
+                    14,
+                    3.0,
+                    16,
+                    5.0
+                ],
+                "line-opacity": 0.7,
+                "line-join": "round",
+                "line-cap": "round"
+            }
+        },
+        {
+            "id": "roads-minor",
+            "type": "line",
+            "source": "osm",
+            "source-layer": "transportation",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    [
+                        "geometry-type"
+                    ],
+                    "LineString"
+                ],
+                [
+                    "match",
+                    [
+                        "get",
+                        "class"
+                    ],
+                    [
+                        "path",
+                        "track",
+                        "service",
+                        "minor"
+                    ],
+                    true,
+                    false
+                ]
+            ],
+            "paint": {
+                "line-color": "#2C2F38",
+                "line-width": [
+                    "interpolate",
+                    [
+                        "linear"
+                    ],
+                    [
+                        "zoom"
+                    ],
+                    8,
+                    0.4,
+                    12,
+                    1.4,
+                    16,
+                    3.0
+                ],
+                "line-opacity": 0.9,
+                "line-join": "round",
+                "line-cap": "round"
+            }
+        },
+        {
+            "id": "roads-major",
+            "type": "line",
+            "source": "osm",
+            "source-layer": "transportation",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    [
+                        "geometry-type"
+                    ],
+                    "LineString"
+                ],
+                [
+                    "match",
+                    [
+                        "get",
+                        "class"
+                    ],
+                    [
+                        "primary",
+                        "secondary",
+                        "tertiary",
+                        "trunk"
+                    ],
+                    true,
+                    false
+                ]
+            ],
+            "paint": {
+                "line-color": "#3A3F4B",
+                "line-width": [
+                    "interpolate",
+                    [
+                        "linear"
+                    ],
+                    [
+                        "zoom"
+                    ],
+                    7,
+                    0.8,
+                    10,
+                    2.0,
+                    14,
+                    4.2,
+                    16,
+                    6.5
+                ],
+                "line-opacity": 0.95,
+                "line-join": "round",
+                "line-cap": "round"
+            }
+        },
+        {
+            "id": "roads-motorway",
+            "type": "line",
+            "source": "osm",
+            "source-layer": "transportation",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    [
+                        "geometry-type"
+                    ],
+                    "LineString"
+                ],
+                [
+                    "match",
+                    [
+                        "get",
+                        "class"
+                    ],
+                    [
+                        "motorway"
+                    ],
+                    true,
+                    false
+                ]
+            ],
+            "paint": {
+                "line-color": "#4B5261",
+                "line-width": [
+                    "interpolate",
+                    [
+                        "linear"
+                    ],
+                    [
+                        "zoom"
+                    ],
+                    7,
+                    1.0,
+                    10,
+                    2.6,
+                    14,
+                    5.2,
+                    16,
+                    8.0
+                ],
+                "line-opacity": 1,
+                "line-join": "round",
+                "line-cap": "round"
+            }
+        },
+        {
+            "id": "road-labels",
+            "type": "symbol",
+            "source": "osm",
+            "source-layer": "transportation_name",
+            "minzoom": 12,
+            "layout": {
+                "text-field": [
+                    "coalesce",
+                    [
+                        "get",
+                        "name"
+                    ],
+                    ""
+                ],
+                "text-font": [
+                    "Open Sans Regular"
+                ],
+                "text-size": [
+                    "interpolate",
+                    [
+                        "linear"
+                    ],
+                    [
+                        "zoom"
+                    ],
+                    12,
+                    11,
+                    16,
+                    14
+                ],
+                "symbol-placement": "line",
+                "text-rotation-alignment": "map",
+                "text-pitch-alignment": "viewport",
+                "text-max-angle": 30,
+                "text-padding": 2
+            },
+            "paint": {
+                "text-color": "#9CA3AF",
+                "text-halo-color": "#0F1116",
+                "text-halo-width": 1.2,
+                "text-opacity": 0.85
+            }
+        },
+        {
+            "id": "powerlines-overlay",
+            "type": "line",
+            "source": "powerlines",
+            "paint": {
+                "line-color": "#FF2D2D",
+                "line-width": [
+                    "interpolate",
+                    [
+                        "linear"
+                    ],
+                    [
+                        "zoom"
+                    ],
+                    8,
+                    1.2,
+                    12,
+                    2.0,
+                    16,
+                    3.0
+                ],
+                "line-opacity": 0.95,
+                "line-dasharray": [
+                    2,
+                    2
+                ],
+                "line-join": "miter",
+                "line-cap": "butt"
+            }
+        },
+        {
+            "id": "route-halo",
+            "type": "line",
+            "source": "route",
+            "paint": {
+                "line-color": "rgba(255, 212, 0, 0.28)",
+                "line-width": [
+                    "interpolate",
+                    [
+                        "linear"
+                    ],
+                    [
+                        "zoom"
+                    ],
+                    8,
+                    6,
+                    12,
+                    12,
+                    16,
+                    18
+                ],
+                "line-blur": 1.2,
+                "line-join": "round",
+                "line-cap": "round"
+            }
+        },
+        {
+            "id": "route-line",
+            "type": "line",
+            "source": "route",
+            "paint": {
+                "line-color": "#FFD400",
+                "line-width": [
+                    "interpolate",
+                    [
+                        "linear"
+                    ],
+                    [
+                        "zoom"
+                    ],
+                    8,
+                    2.5,
+                    12,
+                    4.5,
+                    16,
+                    7.0
+                ],
+                "line-opacity": 1,
+                "line-join": "round",
+                "line-cap": "round"
+            }
+        },
+        {
+            "id": "bridge-route-casing",
+            "type": "line",
+            "source": "route_bridges",
+            "paint": {
+                "line-color": "rgba(255,255,255,0.85)",
+                "line-width": [
+                    "interpolate",
+                    [
+                        "linear"
+                    ],
+                    [
+                        "zoom"
+                    ],
+                    8,
+                    3.4,
+                    12,
+                    5.8,
+                    16,
+                    9.0
+                ],
+                "line-join": "round",
+                "line-cap": "round"
+            }
+        },
+        {
+            "id": "bridge-route-line",
+            "type": "line",
+            "source": "route_bridges",
+            "paint": {
+                "line-color": "#FFE16A",
+                "line-width": [
+                    "interpolate",
+                    [
+                        "linear"
+                    ],
+                    [
+                        "zoom"
+                    ],
+                    8,
+                    2.6,
+                    12,
+                    4.6,
+                    16,
+                    7.2
+                ],
+                "line-opacity": 1,
+                "line-join": "round",
+                "line-cap": "round"
+            }
+        },
+        {
+            "id": "poi-minimal",
+            "type": "symbol",
+            "source": "osm",
+            "source-layer": "poi",
+            "minzoom": 15,
+            "layout": {
+                "text-field": [
+                    "coalesce",
+                    [
+                        "get",
+                        "name"
+                    ],
+                    ""
+                ],
+                "text-font": [
+                    "Open Sans Regular"
+                ],
+                "text-size": 11,
+                "text-offset": [
+                    0,
+                    0.8
+                ]
+            },
+            "paint": {
+                "text-color": "#7C8493",
+                "text-halo-color": "#0F1116",
+                "text-halo-width": 1.0,
+                "text-opacity": 0.5
+            }
+        }
+    ]
+}

@@ -1,0 +1,124 @@
+{
+    "extends": [
+        "stylelint-config-standard",
+        "stylelint-config-recommended-vue"
+    ],
+    "plugins": [
+        "stylelint-declaration-strict-value"
+    ],
+    "rules": {
+        "scale-unlimited/declaration-strict-value": [
+            [
+                "/color/",
+                "font-size",
+                "font-family",
+                "font-weight",
+                "letter-spacing",
+                "line-height",
+                "border-radius",
+                "box-shadow",
+                "transition",
+                "z-index"
+            ],
+            {
+                "ignoreValues": [
+                    "currentColor",
+                    "inherit",
+                    "transparent",
+                    "initial",
+                    "none",
+                    "0",
+                    "1",
+                    "auto",
+                    "normal",
+                    "unset",
+                    "1.5"
+                ],
+                "disableFix": false,
+                "ignoreKeywords": {
+                    "": [
+                        "system-ui",
+                        "sans-serif",
+                        "monospace"
+                    ]
+                }
+            }
+        ],
+        "color-no-hex": [
+            true,
+            {
+                "message": "Use CSS custom properties (--var-name) instead of hex colors for maintainability"
+            }
+        ],
+        "color-named": [
+            "never",
+            {
+                "message": "Use CSS custom properties instead of named colors"
+            }
+        ],
+        "unit-disallowed-list": [
+            [
+                "pt",
+                "cm",
+                "mm",
+                "in",
+                "pc"
+            ],
+            {
+                "message": "Use modern CSS units: px, rem, em, %, vh, vw"
+            }
+        ],
+        "declaration-property-unit-allowed-list": {
+            "font-size": [
+                "px",
+                "rem",
+                "em"
+            ],
+            "/^padding/": [
+                "px",
+                "rem",
+                "em",
+                "%"
+            ],
+            "/^margin/": [
+                "px",
+                "rem",
+                "em",
+                "%"
+            ],
+            "/^gap/": [
+                "px",
+                "rem",
+                "em"
+            ],
+            "width": [
+                "px",
+                "rem",
+                "em",
+                "%",
+                "vw",
+                "vh"
+            ],
+            "height": [
+                "px",
+                "rem",
+                "em",
+                "%",
+                "vw",
+                "vh"
+            ]
+        },
+        "no-empty-source": null,
+        "selector-class-pattern": null,
+        "custom-property-pattern": null,
+        "function-disallowed-list": [
+            "rgb",
+            "rgba",
+            "hsl",
+            "hsla"
+        ],
+        "comment-empty-line-before": null,
+        "declaration-empty-line-before": null,
+        "rule-empty-line-before": null
+    }
+}

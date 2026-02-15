@@ -1,0 +1,169 @@
+name: Design Quality & Visual Regression
+
+on:
+  pull_request:
+    paths:
+      - 'src/**/*.vue'
+      - 'src/**/*.css'
+      - 'src/**/*.js'
+      - 'src/**/*.ts'
+      - '.stylelintrc.json'
+      - 'src/assets/css/design-system.css'
+
+jobs:
+  design-validation:
+    name: Design System Validation
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Run CSS Linting
+        run: npm run lint:css
+        continue-on-error: true
+      
+      - name: Run Design System Audit
+        run: npm run audit:design
+        continue-on-error: true
+      
+      - name: Validate Color Contrast
+        run: npm run test:contrast
+      
+      - name: Comment PR with Results
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.name,
+              body: '⚠️ Design validation found issues. Please review the logs and fix violations before merging.'
+            })
+
+  accessibility-tests:
+    name: Accessibility & Theme Tests
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
+      
+      - name: Run Theme Consistency Tests
+        run: npm run test:theme
+      
+      - name: Run Accessibility Audit
+        run: npm run test:a11y
+        continue-on-error: true
+      
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: accessibility-results
+          path: test-results/
+          retention-days: 7
+
+  visual-regression:
+    name: Percy Visual Regression
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium
+      
+      - name: Run Percy Visual Tests
+        continue-on-error: true
+        env:
+          # actionlint: ignore [expression]
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+        run: npm run test:visual
+      
+      - name: Comment PR with Percy Link
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const percyBuildUrl = process.env.PERCY_BUILD_URL || 'Check Percy dashboard';
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.name,
+              body: `🎨 **Percy Visual Regression Complete**\n\nReview visual changes: ${percyBuildUrl}`
+            })
+
+  design-quality-summary:
+    name: Design Quality Summary
+    runs-on: ubuntu-latest
+    needs: [design-validation, accessibility-tests, visual-regression]
+    if: always()
+    
+    steps:
+      - name: Post Summary
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const designStatus = '${{ needs.design-validation.result }}';
+            const a11yStatus = '${{ needs.accessibility-tests.result }}';
+            const visualStatus = '${{ needs.visual-regression.result }}';
+            
+            const statusIcon = (status) => status === 'success' ? '✅' : status === 'failure' ? '❌' : '⚠️';
+            
+            const summary = `
+            ## 🎨 Design Quality Check Results
+            
+            | Check | Status |
+            |-------|--------|
+            | Design System Compliance | ${statusIcon(designStatus)} ${designStatus} |
+            | Accessibility & Themes | ${statusIcon(a11yStatus)} ${a11yStatus} |
+            | Visual Regression (Percy) | ${statusIcon(visualStatus)} ${visualStatus} |
+            
+            ${designStatus !== 'success' ? '⚠️ Please fix design violations before merging.\n' : ''}
+            ${a11yStatus !== 'success' ? '⚠️ Accessibility issues detected. Review test logs.\n' : ''}
+            
+            ---
+            📚 **Resources:**
+            - [Design System Guide](../blob/main/docs/design/DESIGN_SYSTEM.md)
+            - [Design Review Guide](../blob/main/docs/design/DESIGN_REVIEW_GUIDE.md)
+            `;
+            
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.name,
+              body: summary
+            })

@@ -1,0 +1,523 @@
+/* RouteSurvey.app Design System - Global CSS Variables */
+
+/* Light Mode - Default Theme */
+:root {
+    /* Background Colors */
+    --bg-base: #F0F4F8;
+    /* Slightly cooler/richer gray for depth */
+    --bg-surface: #FFFFFF;
+    --bg-elevated: #F8FAFC;
+    --bg-glass: rgba(255, 255, 255, 0.7);
+    /* Glassmorphism base */
+
+    /* Text Colors */
+    --text-primary: #0F172A;
+    /* Slate 900 - Sharp and high contrast */
+    --text-secondary: #475569;
+    /* Slate 600 */
+    --text-tertiary: #94A3B8;
+    /* Slate 400 */
+
+    /* Accent Colors - Premium Blue */
+    --accent: #2563EB;
+    /* Royal Blue */
+    --accent-hover: #1D4ED8;
+    --accent-light: #60A5FA;
+    --accent-surface: rgba(37, 99, 235, 0.08);
+    --accent-focus-ring: rgba(37, 99, 235, 0.25);
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%);
+    --gradient-surface: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(248, 250, 252, 1) 100%);
+
+    /* Border Colors */
+    --border: #E2E8F0;
+    /* Slate 200 */
+    --border-hover: #CBD5E1;
+    /* Slate 300 */
+
+    /* Status Colors - Vibrant & Compliant */
+    --success: #059669;
+    /* Emerald 600 */
+    --success-bg: #ECFDF5;
+    --warning: #D97706;
+    /* Amber 600 */
+    --warning-bg: #FFFBEB;
+    --error: #DC2626;
+    /* Red 600 */
+    --error-bg: #FEF2F2;
+    --info: #0EA5E9;
+    /* Sky 500 */
+    --info-bg: #F0F9FF;
+
+    /* Semantic Status Colors */
+    --status-draft: var(--text-tertiary);
+    --status-needs-data: var(--warning);
+    --status-ready: var(--success);
+    --status-shared: var(--accent);
+    --status-blocking: var(--error);
+
+    /* Spacing Scale */
+    --spacing-2xs: 4px;
+    --spacing-xs: 8px;
+    --spacing-sm: 12px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-2xl: 48px;
+
+    /* Typography */
+    --font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --font-family-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+    /* Font Sizes */
+    --font-size-xs: 12px;
+    --font-size-sm: 13px;
+    --font-size-base: 14px;
+    --font-size-lg: 16px;
+    --font-size-xl: 18px;
+    --font-size-2xl: 20px;
+    --font-size-3xl: 24px;
+    --font-size-4xl: 32px;
+    --font-size-5xl: 48px;
+
+    /* Font Weights */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Letter Spacing */
+    --letter-spacing-tight: -0.01em;
+    --letter-spacing-normal: 0em;
+    --letter-spacing-wide: 0.025em;
+
+    /* Border Radius */
+    --radius-sm: 6px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+    --radius-2xl: 24px;
+    --radius-full: 9999px;
+
+    /* Shadows - Premium Elevation */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+    /* Colored Shadows for Active States */
+    --shadow-colored: 0 8px 16px -4px rgba(37, 99, 235, 0.25);
+    --shadow-colored-hover: 0 12px 20px -4px rgba(37, 99, 235, 0.35);
+
+    /* Transitions */
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+    --backdrop-blur: blur(8px);
+}
+
+/* Dark Mode Theme */
+[data-bs-theme="dark"] {
+    /* Background Colors */
+    --bg-base: #0F172A;
+    --bg-surface: #1E293B;
+    --bg-elevated: #334155;
+
+    /* Text Colors */
+    --text-primary: #F8FAFC;
+    --text-secondary: #A0AEC0;
+    /* Lighter for better contrast on elevated surfaces (was #94A3B8) */
+    --text-tertiary: #64748B;
+
+    /* Border Colors */
+    --border: #475569;
+
+    /* Accent Colors - Slightly lighter for dark backgrounds */
+    --accent: #4A9EFF;
+    /* Lighter blue for better visibility on dark backgrounds */
+    --accent-hover: #6BB0FF;
+    --accent-surface: rgb(74 158 255 / 10%);
+    --accent-focus-ring: rgb(74 158 255 / 20%);
+
+    /* Status Colors - Lighter versions for dark mode, maintaining contrast */
+    --success: #00D68F;
+    /* Lighter green for dark backgrounds */
+    --warning: #FFB020;
+    /* Lighter orange for dark backgrounds */
+    --error: #FF6B9D;
+    /* Lighter pink for dark backgrounds */
+
+    /* Semantic Status Colors (Business Logic) */
+    --status-draft: #64748B;
+    --status-needs-data: var(--warning);
+    --status-ready: var(--success);
+    --status-shared: var(--accent);
+    --status-blocking: var(--error);
+
+    /* Enhanced shadows for dark mode */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 30%);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 40%), 0 2px 4px -1px rgb(0 0 0 / 30%);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 40%), 0 4px 6px -2px rgb(0 0 0 / 30%);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 40%), 0 10px 10px -5px rgb(0 0 0 / 30%);
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    :root {
+        --border: #000;
+        --text-secondary: #000;
+    }
+
+    [data-bs-theme="dark"] {
+        --border: #FFF;
+        --text-secondary: #FFF;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    :root {
+        --transition-fast: 0s;
+        --transition-normal: 0s;
+        --transition-slow: 0s;
+    }
+}
+
+/* Focus Styles */
+:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 4px var(--accent-focus-ring), 0 0 0 2px var(--bg-surface);
+    transition: box-shadow var(--transition-fast);
+}
+
+/* Selection Styles */
+::selection {
+    background-color: var(--accent);
+    color: white;
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-elevated);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-secondary);
+}
+
+/* Global Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Global Typography */
+body {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    line-height: 1.5;
+    color: var(--text-primary);
+    background-color: var(--bg-base);
+    transition: background-color var(--transition-normal), color var(--transition-normal);
+}
+
+/* Utility Classes */
+.text-primary {
+    color: var(--text-primary);
+}
+
+.text-secondary {
+    color: var(--text-secondary);
+}
+
+.bg-surface {
+    background-color: var(--bg-surface);
+}
+
+.bg-elevated {
+    background-color: var(--bg-elevated);
+}
+
+.border {
+    border: 1px solid var(--border);
+}
+
+.shadow-sm {
+    box-shadow: var(--shadow-sm);
+}
+
+.shadow-md {
+    box-shadow: var(--shadow-md);
+}
+
+.shadow-lg {
+    box-shadow: var(--shadow-lg);
+}
+
+.shadow-xl {
+    box-shadow: var(--shadow-xl);
+}
+
+/* -------------------------------------------------------------------------- */
+
+/*                                Context Bar                                 */
+
+/* -------------------------------------------------------------------------- */
+.context-bar {
+    position: absolute;
+    top: 0;
+    left: 260px;
+
+    /* Aligned with sidebar width */
+    right: 0;
+    height: 48px;
+    background: linear-gradient(90deg, #EBF8FF 0%, #F5F7FA 100%);
+    border-bottom: 2px solid var(--accent);
+    z-index: 101;
+
+    /* Above navbar */
+    display: flex;
+    align-items: center;
+    padding: 0 var(--spacing-lg);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 5%);
+}
+
+[data-bs-theme="dark"] .context-bar {
+    background: linear-gradient(90deg, #1e3a8a 0%, #1e293b 100%);
+}
+
+.context-bar-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.context-info {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-size: var(--font-size-base);
+}
+
+.context-label {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+}
+
+.context-value {
+    font-weight: 600;
+    color: var(--text-primary);
+    font-size: 1rem;
+}
+
+.context-close-btn {
+    position: absolute;
+    right: 0;
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: var(--spacing-xs);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.context-close-btn:hover {
+    background: rgb(0 0 0 / 5%);
+    color: var(--error);
+}
+
+/* Adjust navbar when context bar is active */
+.navbar.context-active {
+    margin-top: 48px;
+}
+
+@media (width <=768px) {
+    .context-bar {
+        left: 0;
+        padding: 0 var(--spacing-md);
+        height: 60px;
+    }
+
+    .context-info {
+        flex-direction: column;
+        gap: 0;
+        align-items: flex-start;
+    }
+
+    .navbar.context-active {
+        margin-top: 60px;
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+
+/*                                Motion System                               */
+
+/* -------------------------------------------------------------------------- */
+
+/* Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Page Transitions (Vue) */
+.page-fade-enter-active,
+.page-fade-leave-active {
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.page-fade-enter-from {
+    opacity: 0;
+    transform: scale(0.98) translateY(10px);
+    filter: blur(4px);
+}
+
+.page-fade-leave-to {
+    opacity: 0;
+    transform: scale(1.02);
+    filter: blur(4px);
+}
+
+/* List Transitions (Vue) */
+.list-enter-active,
+.list-leave-active {
+    transition: all var(--transition-normal);
+}
+
+.list-enter-from,
+.list-leave-to {
+    opacity: 0;
+    transform: translateX(-10px);
+}
+
+/* Modal Helper Classes */
+.animate-fade-in {
+    animation: fadeIn var(--transition-normal) forwards;
+}
+
+.animate-slide-up {
+    animation: slideUp var(--transition-slow) cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/*                             Staggered Animation                            */
+
+/* -------------------------------------------------------------------------- */
+
+@keyframes slideUpFade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-stagger {
+    opacity: 0;
+    /* Start hidden */
+    animation: slideUpFade 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.delay-0 {
+    animation-delay: 0ms;
+}
+
+.delay-100 {
+    animation-delay: 100ms;
+}
+
+.delay-200 {
+    animation-delay: 200ms;
+}
+
+.delay-300 {
+    animation-delay: 300ms;
+}
+
+.delay-400 {
+    animation-delay: 400ms;
+}
+
+.delay-500 {
+    animation-delay: 500ms;
+}

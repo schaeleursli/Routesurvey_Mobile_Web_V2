@@ -1,0 +1,256 @@
+{
+    "ids": {
+        "projectId": "proj_01234567890",
+        "routeId": "route_abc123",
+        "blockedCaseId": "case_blocked_001",
+        "readyCaseId": "case_ready_002"
+    },
+    "api": {
+        "listCases": [
+            {
+                "id": "case_blocked_001",
+                "title": "Oversized Load - TX to CA",
+                "status": "blocked",
+                "readiness_score": 62,
+                "project_id": "proj_01234567890",
+                "created_at": "2026-01-15T10:00:00Z",
+                "updated_at": "2026-01-27T14:30:00Z"
+            },
+            {
+                "id": "case_ready_002",
+                "title": "Heavy Haul - FL to TX",
+                "status": "ready",
+                "readiness_score": 98,
+                "project_id": "proj_01234567890",
+                "created_at": "2026-01-20T09:00:00Z",
+                "updated_at": "2026-01-28T12:00:00Z"
+            }
+        ],
+        "permitCaseDetail": {
+            "case_blocked_001": {
+                "id": "case_blocked_001",
+                "title": "Oversized Load - TX to CA",
+                "status": "blocked",
+                "readiness_score": 62,
+                "project_id": "proj_01234567890",
+                "route_id": "route_abc123",
+                "created_at": "2026-01-15T10:00:00Z",
+                "updated_at": "2026-01-27T14:30:00Z",
+                "payload_json": {
+                    "route": {
+                        "statesInRoute": [
+                            "TX",
+                            "CA",
+                            "FL"
+                        ]
+                    },
+                    "transport": {
+                        "overall": {
+                            "width_ft": 19,
+                            "width_in": 2,
+                            "height_ft": 18,
+                            "height_in": 0,
+                            "length_ft": 145,
+                            "length_in": 0,
+                            "gross_lbs": 462000
+                        }
+                    },
+                    "attachments": {
+                        "kmlProvided": false,
+                        "clearanceEvidenceProvided": false,
+                        "bridgeListProvided": false,
+                        "routeInspectionCertificateProvided": false
+                    },
+                    "compliance": {
+                        "preparedBy": {
+                            "name": "",
+                            "company": ""
+                        },
+                        "surveyDate": null
+                    }
+                },
+                "rollup_json": {
+                    "validation": {
+                        "blockingIssues": [
+                            {
+                                "type": "missing_required",
+                                "path": "attachments.kmlProvided",
+                                "message": "KML route file required"
+                            },
+                            {
+                                "type": "missing_required",
+                                "path": "attachments.clearanceEvidenceProvided",
+                                "message": "Clearance evidence required"
+                            }
+                        ],
+                        "warnings": []
+                    },
+                    "conflicts": [
+                        {
+                            "type": "TRAVEL_WINDOW",
+                            "severity": "block",
+                            "affectedJurisdictions": [
+                                "CA",
+                                "TX",
+                                "FL"
+                            ],
+                            "details": {
+                                "CA": {
+                                    "window": "Monday-Friday 8am-4pm",
+                                    "restrictions": [
+                                        "No weekends",
+                                        "No holidays"
+                                    ]
+                                },
+                                "TX": {
+                                    "window": "Anytime with 48hr notice",
+                                    "restrictions": []
+                                },
+                                "FL": {
+                                    "window": "Tuesday-Thursday 9am-3pm",
+                                    "restrictions": [
+                                        "No weekends",
+                                        "No rush hour"
+                                    ]
+                                }
+                            },
+                            "intersection": "none",
+                            "suggestedResolutions": [
+                                "Apply for special exemption in CA",
+                                "Split route into multiple segments with different travel windows"
+                            ]
+                        }
+                    ],
+                    "decisions": [
+                        {
+                            "jurisdiction": "CA",
+                            "jurisdictionName": "California",
+                            "authorityLabel": "Caltrans",
+                            "decision": "conditional",
+                            "rationale": [
+                                "Width exceeds standard limit (19'2\" > 16')",
+                                "Travel window restricted to weekdays 8am-4pm",
+                                "KML route file required for review"
+                            ]
+                        },
+                        {
+                            "jurisdiction": "TX",
+                            "jurisdictionName": "Texas",
+                            "authorityLabel": "TxDOT",
+                            "decision": "approved",
+                            "rationale": [
+                                "Dimensions within superload category",
+                                "48-hour advance notice required"
+                            ]
+                        },
+                        {
+                            "jurisdiction": "FL",
+                            "jurisdictionName": "Florida",
+                            "authorityLabel": "FDOT",
+                            "decision": "pending",
+                            "rationale": [
+                                "Height requires bridge clearance verification",
+                                "Weekday travel only (Tue-Thu 9am-3pm)"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "case_ready_002": {
+                "id": "case_ready_002",
+                "title": "Heavy Haul - FL to TX",
+                "status": "ready",
+                "readiness_score": 98,
+                "project_id": "proj_01234567890",
+                "route_id": "route_xyz789",
+                "created_at": "2026-01-20T09:00:00Z",
+                "updated_at": "2026-01-28T12:00:00Z",
+                "payload_json": {
+                    "route": {
+                        "statesInRoute": [
+                            "FL",
+                            "TX"
+                        ]
+                    },
+                    "transport": {
+                        "overall": {
+                            "width_ft": 14,
+                            "width_in": 6,
+                            "height_ft": 15,
+                            "height_in": 0,
+                            "length_ft": 120,
+                            "length_in": 0,
+                            "gross_lbs": 380000
+                        }
+                    },
+                    "attachments": {
+                        "kmlProvided": true,
+                        "clearanceEvidenceProvided": true,
+                        "bridgeListProvided": true,
+                        "routeInspectionCertificateProvided": true
+                    },
+                    "compliance": {
+                        "preparedBy": {
+                            "name": "John Surveyor",
+                            "company": "Route Survey Co."
+                        },
+                        "surveyDate": "2026-01-25"
+                    }
+                },
+                "rollup_json": {
+                    "validation": {
+                        "blockingIssues": [],
+                        "warnings": []
+                    },
+                    "conflicts": [],
+                    "decisions": [
+                        {
+                            "jurisdiction": "FL",
+                            "jurisdictionName": "Florida",
+                            "authorityLabel": "FDOT",
+                            "decision": "approved",
+                            "rationale": [
+                                "All requirements met"
+                            ]
+                        },
+                        {
+                            "jurisdiction": "TX",
+                            "jurisdictionName": "Texas",
+                            "authorityLabel": "TxDOT",
+                            "decision": "approved",
+                            "rationale": [
+                                "Standard oversize permit applicable"
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        "routeSegments": {},
+        "createCaseResponse": {
+            "id": "case_new_003",
+            "title": "New Permit Case",
+            "status": "draft",
+            "readiness_score": 0,
+            "project_id": "proj_01234567890",
+            "created_at": "2026-01-28T01:20:23Z",
+            "updated_at": "2026-01-28T01:20:23Z",
+            "payload_json": {
+                "route": {
+                    "statesInRoute": []
+                },
+                "transport": {},
+                "attachments": {},
+                "compliance": {}
+            },
+            "rollup_json": {
+                "validation": {
+                    "blockingIssues": [],
+                    "warnings": []
+                },
+                "conflicts": [],
+                "decisions": []
+            }
+        }
+    }
+}

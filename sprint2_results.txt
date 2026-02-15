@@ -1,0 +1,342 @@
+
+Running 27 tests using 4 workers
+
+Navigating to /forgot_password...
+Navigating to /dashboard...
+Navigating to /signup...
+Navigating to /login...
+Console Errors on /forgot_password: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓   3 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Forgot Password (/forgot_password) (2.8s)
+Navigating to /routes...
+Console Errors on /login: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+Console Errors on /dashboard: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+Console Errors on /signup: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓   2 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Dashboard (/dashboard) (3.0s)
+  ✓   4 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Signup (/signup) (3.0s)
+  ✓   1 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Login (/login) (3.0s)
+Navigating to /manual-routes/add...
+Navigating to /manual-routes...
+Navigating to /routes/999...
+Console Errors on /routes: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓   5 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Routes List (/routes) (2.1s)
+Navigating to /manual-routes/999/edit...
+Console Errors on /manual-routes: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓   7 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Manual Routes List (/manual-routes) (2.3s)
+Console Errors on /routes/999: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓   6 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Route Viewer (ID: 999) (/routes/999) (2.5s)
+Console Errors on /manual-routes/add: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+Navigating to /planned-routes...
+  ✓   8 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Add Manual Route (/manual-routes/add) (2.6s)
+Navigating to /planned-routes/add...
+Navigating to /planned-routes/888...
+Console Errors on /manual-routes/999/edit: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓   9 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Edit Manual Route (ID: 999) (/manual-routes/999/edit) (2.6s)
+Console Errors on /planned-routes: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓  10 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Planned Routes List (/planned-routes) (2.4s)
+Navigating to /planned-routes/888/edit...
+Navigating to /surveys/777/overview...
+Console Errors on /planned-routes/888: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓  12 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: View Planned Route (ID: 888) (/planned-routes/888) (2.8s)
+Console Errors on /planned-routes/add: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓  11 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Add Planned Route (/planned-routes/add) (2.9s)
+Navigating to /surveys/777/report...
+Navigating to /admin/users...
+Console Errors on /planned-routes/888/edit: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓  13 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Edit Planned Route (ID: 888) (/planned-routes/888/edit) (2.1s)
+Navigating to /admin/templates...
+Console Errors on /surveys/777/overview: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓  14 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Survey Execution (ID: 777) (/surveys/777/overview) (2.4s)
+Navigating to /admin/organizations...
+Console Errors on /admin/users: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓  16 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Users Admin (/admin/users) (2.0s)
+Navigating to /admin/tools...
+Console Errors on /surveys/777/report: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓  15 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Survey Report (ID: 777) (/surveys/777/report) (2.6s)
+Navigating to /user/profile...
+Console Errors on /admin/templates: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'getTemplates error: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓  17 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Templates Admin (/admin/templates) (2.3s)
+Navigating to /user/settings...
+Console Errors on /admin/organizations: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓  18 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Organizations Admin (/admin/organizations) (2.4s)
+Console Errors on /admin/tools: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓  19 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Admin Tools (/admin/tools) (2.2s)
+Navigating to /user/subscription...
+Navigating to /reporting...
+Console Errors on /user/profile: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Get MFA status failed: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓  20 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Profile (/user/profile) (2.3s)
+Navigating to /browse-templates...
+Console Errors on /user/settings: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Get MFA status failed: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓  21 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Settings (/user/settings) (2.1s)
+Navigating to /notifications...
+Console Errors on /reporting: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+Console Errors on /user/subscription: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓  23 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Reporting Hub (/reporting) (2.5s)
+  ✓  22 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: User Subscription (/user/subscription) (2.7s)
+Navigating to /pdf-viewer...
+Navigating to /transport-engineering...
+Console Errors on /browse-templates: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓  24 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Browse Templates (/browse-templates) (2.5s)
+Console Errors on /notifications: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓  25 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Notifications (/notifications) (2.3s)
+Console Errors on /transport-engineering: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓  27 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: Transport Engineering (/transport-engineering) (1.9s)
+Console Errors on /pdf-viewer: [
+  [32m'Failed to fetch CSRF token: AxiosError'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m,
+  [32m'Failed to load resource: net::ERR_FAILED'[39m
+]
+  ✓  26 [chromium] › tests/e2e/autonomous_crawler.spec.ts:328:5 › Autonomous Crawler & Screen Protocol › Proto-Screen: PDF Viewer (/pdf-viewer) (2.1s)
+
+  27 passed (20.8s)

@@ -1,0 +1,97 @@
+
+> routesurveyconsole@0.0.0 test:e2e
+> playwright test tests/e2e/smoke.spec.ts
+
+
+Running 24 tests using 4 workers
+
+[1A[2K[1/24] [chromium] › tests/e2e/smoke.spec.ts:70:3 › Release Candidate Smoke Test › 01. App boots without console errors
+[1A[2K[2/24] [chromium] › tests/e2e/smoke.spec.ts:106:3 › Release Candidate Smoke Test › 02. Auth: Login -> Logout
+[1A[2K[3/24] [chromium] › tests/e2e/smoke.spec.ts:212:3 › Release Candidate Smoke Test › 04. Search + Filter + Sort
+[1A[2K[4/24] [chromium] › tests/e2e/smoke.spec.ts:206:3 › Release Candidate Smoke Test › 03. Route List Loads
+[1A[2K[chromium] › tests/e2e/smoke.spec.ts:106:3 › Release Candidate Smoke Test › 02. Auth: Login -> Logout
+Navigating to /login
+
+[1A[2K[5/24] [chromium] › tests/e2e/smoke.spec.ts:218:3 › Release Candidate Smoke Test › 05. Open Route Detail
+[1A[2KFilling login form...
+
+[1A[2K[6/24] [chromium] › tests/e2e/smoke.spec.ts:224:3 › Release Candidate Smoke Test › 06. Primary Actions Gating
+[1A[2K[7/24] [chromium] › tests/e2e/smoke.spec.ts:229:3 › Release Candidate Smoke Test › 07. Create Manual Route (CRUD)
+[1A[2K[8/24] [chromium] › tests/e2e/smoke.spec.ts:359:3 › Release Candidate Smoke Test › 09. Permissions
+[1A[2KWaiting for redirect...
+
+[1A[2K[chromium] › tests/e2e/smoke.spec.ts:229:3 › Release Candidate Smoke Test › 07. Create Manual Route (CRUD)
+Mock hit: Users/GetUserData
+
+[1A[2KMock hit: ManualRoutes/GetManualRoutes
+
+[1A[2K[9/24] [firefox] › tests/e2e/smoke.spec.ts:106:3 › Release Candidate Smoke Test › 02. Auth: Login -> Logout
+[1A[2K[10/24] [firefox] › tests/e2e/smoke.spec.ts:70:3 › Release Candidate Smoke Test › 01. App boots without console errors
+[1A[2K[11/24] [firefox] › tests/e2e/smoke.spec.ts:206:3 › Release Candidate Smoke Test › 03. Route List Loads
+[1A[2K[12/24] [firefox] › tests/e2e/smoke.spec.ts:212:3 › Release Candidate Smoke Test › 04. Search + Filter + Sort
+[1A[2K[13/24] [firefox] › tests/e2e/smoke.spec.ts:218:3 › Release Candidate Smoke Test › 05. Open Route Detail
+[1A[2K[firefox] › tests/e2e/smoke.spec.ts:106:3 › Release Candidate Smoke Test › 02. Auth: Login -> Logout
+Navigating to /login
+
+[1A[2K[14/24] [firefox] › tests/e2e/smoke.spec.ts:224:3 › Release Candidate Smoke Test › 06. Primary Actions Gating
+[1A[2K[15/24] [firefox] › tests/e2e/smoke.spec.ts:229:3 › Release Candidate Smoke Test › 07. Create Manual Route (CRUD)
+[1A[2K[16/24] [firefox] › tests/e2e/smoke.spec.ts:359:3 › Release Candidate Smoke Test › 09. Permissions
+[1A[2KFilling login form...
+
+[1A[2KWaiting for redirect...
+
+[1A[2K[firefox] › tests/e2e/smoke.spec.ts:229:3 › Release Candidate Smoke Test › 07. Create Manual Route (CRUD)
+Mock hit: Users/GetUserData
+
+[1A[2KMock hit: ManualRoutes/GetManualRoutes
+
+[1A[2K[17/24] [webkit] › tests/e2e/smoke.spec.ts:70:3 › Release Candidate Smoke Test › 01. App boots without console errors
+[1A[2K[18/24] [webkit] › tests/e2e/smoke.spec.ts:106:3 › Release Candidate Smoke Test › 02. Auth: Login -> Logout
+[1A[2K[19/24] [webkit] › tests/e2e/smoke.spec.ts:206:3 › Release Candidate Smoke Test › 03. Route List Loads
+[1A[2K[20/24] [webkit] › tests/e2e/smoke.spec.ts:212:3 › Release Candidate Smoke Test › 04. Search + Filter + Sort
+[1A[2K[webkit] › tests/e2e/smoke.spec.ts:106:3 › Release Candidate Smoke Test › 02. Auth: Login -> Logout
+Navigating to /login
+
+[1A[2KFilling login form...
+
+[1A[2K[21/24] [webkit] › tests/e2e/smoke.spec.ts:218:3 › Release Candidate Smoke Test › 05. Open Route Detail
+[1A[2K[22/24] [webkit] › tests/e2e/smoke.spec.ts:224:3 › Release Candidate Smoke Test › 06. Primary Actions Gating
+[1A[2KWaiting for redirect...
+
+[1A[2K[23/24] [webkit] › tests/e2e/smoke.spec.ts:229:3 › Release Candidate Smoke Test › 07. Create Manual Route (CRUD)
+[1A[2K[24/24] [webkit] › tests/e2e/smoke.spec.ts:359:3 › Release Candidate Smoke Test › 09. Permissions
+[1A[2K[webkit] › tests/e2e/smoke.spec.ts:229:3 › Release Candidate Smoke Test › 07. Create Manual Route (CRUD)
+Mock hit: Users/GetUserData
+
+[1A[2KMock hit: ManualRoutes/GetManualRoutes
+
+[1A[2K  1) [webkit] › tests/e2e/smoke.spec.ts:106:3 › Release Candidate Smoke Test › 02. Auth: Login -> Logout 
+
+    Error: [2mexpect([22m[31mpage[39m[2m).[22mtoHaveURL[2m([22m[32mexpected[39m[2m)[22m failed
+
+    Expected pattern: [32m/\/dashboard|^\/$/[39m
+    Received string:  [31m"http://localhost:5174/login"[39m
+    Timeout: 5000ms
+
+    Call log:
+    [2m  - Expect "toHaveURL" with timeout 5000ms[22m
+    [2m    9 × unexpected value "http://localhost:5174/login"[22m
+
+
+      125 |         // Verify Redirect to Dashboard (Root or /dashboard)
+      126 |         console.log('Waiting for redirect...');
+    > 127 |         await expect(page).toHaveURL(/\/dashboard|^\/$/); // Allow either root or dashboard
+          |                            ^
+      128 |
+      129 |         // Verify Cookie logic (frontend should set l_t)
+      130 |         const cookies = await page.context().cookies();
+        at /Users/ursschaerer/RS-Consol/RS_Console_V3/RSConsole-V3/tests/e2e/smoke.spec.ts:127:28
+
+    Error Context: test-results/smoke-Release-Candidate-Smoke-Test-02-Auth-Login---Logout-webkit/error-context.md
+
+
+[1A[2K  1 failed
+    [webkit] › tests/e2e/smoke.spec.ts:106:3 › Release Candidate Smoke Test › 02. Auth: Login -> Logout 
+  23 passed (23.4s)
+
+[36m  Serving HTML report at http://localhost:9323. Press Ctrl+C to quit.[39m
