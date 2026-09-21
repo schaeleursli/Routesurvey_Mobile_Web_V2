@@ -242,6 +242,17 @@ export const CRM_SOURCE_REGISTRY = [
     notes: "Chile requires specialized engineering route studies at defined special-load thresholds; use this to identify qualified firms and engineers."
   },
   {
+    id: "transport-engineering-public-research",
+    name: "Transport Engineering Public Research",
+    type: "reviewed_research",
+    entityLevels: ["person", "company"],
+    access: "public",
+    ingestion: "reviewed_public_import",
+    cadence: "continuous",
+    url: null,
+    notes: "Reviewed public-source research for transport engineering companies and engineers. Per-record evidence preserves the original source URL."
+  },
+  {
     id: "breakbulk-event-app-attendees",
     name: "Breakbulk Event App Attendees",
     type: "conference_attendee",
