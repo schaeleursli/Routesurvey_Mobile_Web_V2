@@ -261,6 +261,15 @@ const mainRoutes = [
     },
   },
   {
+    path: "/admin/crm/engineering",
+    name: "RouteSurveyCRMEngineering",
+    component: () => import("@/views/crm/EngineeringReview.vue"),
+    meta: {
+      pageTitle: "Transport Engineering Review",
+      requiresAdmin: true,
+    },
+  },
+  {
     path: "/reporting",
     name: "Reporting",
     component: () => import("@/views/reports/Reporting.vue"),
