@@ -49,11 +49,17 @@ async def require_crm_admin(authorization: str | None = Header(default=None)) ->
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid bearer token") from exc
 
     role = _extract_role(claims)
-    if role not in settings.crm_admin_roles:
-        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="CRM admin role required")
+    subject_value = claims.get("sub") or claims.get("uid") or claims.get("userId") or claims.get("user_id")
+    subject = str(subject_value) if subject_value is not None else None
+
+    role_allowed = role in settings.crm_admin_roles
+    subject_allowed = bool(subject and subject in settings.crm_admin_subjects)
+
+    if not role_allowed and not subject_allowed:
+        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="CRM admin authorization required")
 
     return AdminPrincipal(
-        subject=str(claims.get("sub")) if claims.get("sub") is not None else None,
-        role=role,
+        subject=subject,
+        role=role or "allowlisted-admin",
         claims=claims,
     )
