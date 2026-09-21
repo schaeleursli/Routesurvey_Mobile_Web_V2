@@ -60,14 +60,46 @@ Public sources:
 - public company snapshots
 
 Events:
-- Breakbulk Americas
-- Breakbulk Europe
-- Breakbulk Middle East
+- Breakbulk Americas — Houston
+- Breakbulk Europe — Rotterdam
+- Breakbulk Middle East — Dubai
+
+Track both:
+- the completed 2026 editions for historical company/person evidence
+- the upcoming 2027 editions as live prospecting/event-planning pipelines
+
+Breakbulk Europe and Breakbulk Middle East/Dubai are first-class CRM source families, not secondary regional add-ons.
 
 Attendee/visitor records:
 - treat attendee data as authorized/event-app data
 - use only information the authenticated user is entitled to access or export
 - do not automate extraction from private networking views
+
+### 4. Intermodal South America — LATAM
+
+Intermodal South America should be the main broad LATAM logistics-event source alongside the more specialized heavy-haul/project-cargo associations.
+
+Use:
+- public exhibitor list
+- public sponsors/partners
+- public Interlog Summit speakers and agenda participants
+- public attraction/arena participants
+- manually supplied or authorized attendee/export data where permitted
+
+Strong LATAM signals:
+- ports and terminals
+- railways and rail logistics
+- road carriers
+- freight forwarders
+- customs and foreign trade
+- shipping lines
+- warehousing and intralogistics
+- project cargo / breakbulk
+- logistics technology
+- infrastructure operators
+- shippers and industrial cargo owners
+
+Keep Intermodal contacts tagged by country and sub-region so Brazil-heavy event data can be separated from wider LATAM coverage.
 
 ## CRM source-to-lead model
 
@@ -79,9 +111,12 @@ Company
   ├─ RICA attendee
   ├─ RICA leadership
   ├─ SC&RA member / new member
-  ├─ Breakbulk exhibitor
-  ├─ Breakbulk speaker employer
-  └─ Breakbulk attendee (authorized)
+  ├─ Breakbulk Americas exhibitor/speaker
+  ├─ Breakbulk Europe exhibitor/speaker
+  ├─ Breakbulk Middle East / Dubai exhibitor/speaker
+  ├─ Breakbulk attendee (authorized)
+  ├─ Intermodal South America exhibitor
+  └─ Interlog Summit speaker/company
 ```
 
 Multiple independent signals raise sector relevance but do not by themselves establish sales interest.
@@ -93,6 +128,8 @@ This is a discovery score, not a sales verdict.
 - +30 first-party RouteSurvey trial/customer
 - +20 named Breakbulk speaker / decision-maker
 - +15 Breakbulk exhibitor
+- +15 Intermodal South America exhibitor
+- +20 Interlog Summit named speaker / decision-maker
 - +15 RICA current attending company
 - +15 SC&RA member evidence
 - +10 RICA board/committee company
