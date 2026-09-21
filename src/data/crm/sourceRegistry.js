@@ -176,6 +176,72 @@ export const CRM_SOURCE_REGISTRY = [
     notes: "Upcoming 13-15 April 2027 São Paulo event. Track exhibitors, Interlog Summit speakers, sponsors and public event participants."
   },
   {
+    id: "asce-tdi-freight-logistics",
+    name: "ASCE T&DI Freight & Logistics Committee",
+    type: "professional_committee",
+    entityLevels: ["person", "company"],
+    access: "public",
+    ingestion: "reviewed_public_import",
+    cadence: "quarterly",
+    url: "https://www.asce.org/communities/institutes-and-technical-groups/transportation-and-development-institute/committees/board-of-governors--t-di/planning---development-council/freight---logistics-committee",
+    notes: "US transportation-engineering source with named freight/logistics engineers and committee members."
+  },
+  {
+    id: "asce-tdi-rail-transport",
+    name: "ASCE T&DI Rail Transport Committee",
+    type: "professional_committee",
+    entityLevels: ["person", "company"],
+    access: "public",
+    ingestion: "reviewed_public_import",
+    cadence: "quarterly",
+    url: "https://www.asce.org/communities/institutes-and-technical-groups/transportation-and-development-institute/committees/board-of-governors--t-di/rail---public-transit-council/rail-transport-committee",
+    notes: "US rail-engineering source with named licensed engineers, researchers and committee leadership."
+  },
+  {
+    id: "esta-europe-transport-engineering",
+    name: "ESTA Europe Heavy Transport Network",
+    type: "industry_association",
+    entityLevels: ["person", "company"],
+    access: "public",
+    ingestion: "reviewed_public_import",
+    cadence: "quarterly",
+    url: "https://estaeurope.eu/",
+    notes: "European abnormal transport and mobile-crane ecosystem spanning more than 100 associations/companies across 27 countries."
+  },
+  {
+    id: "confea-engenheiro-transportes",
+    name: "CONFEA / CREA Transport Engineer Credential Framework",
+    type: "professional_credential",
+    entityLevels: ["person"],
+    access: "public",
+    ingestion: "credential_validation",
+    cadence: "as_needed",
+    url: "https://normativos.confea.org.br/Ementas/Visualizar?id=64797",
+    notes: "Brazilian authoritative source defining Engenheiro de Transportes / Engenheira de Transportes and professional scope."
+  },
+  {
+    id: "sobratema-opus-rigging",
+    name: "Sobratema / Instituto OPUS Rigging",
+    type: "professional_training",
+    entityLevels: ["person", "company"],
+    access: "public",
+    ingestion: "reviewed_public_import",
+    cadence: "event_cycle",
+    url: "https://www.sobratema.org.br/",
+    notes: "Brazil source for rigging, lifting and cargo-handling specialists, instructors and sector participants."
+  },
+  {
+    id: "chile-special-load-engineering",
+    name: "Chile Special-Load Engineering Requirement",
+    type: "regulatory_engineering",
+    entityLevels: ["company", "person"],
+    access: "public",
+    ingestion: "discovery_support",
+    cadence: "annual_review",
+    url: "https://www.chileatiende.gob.cl/fichas/4429-autorizacion-para-que-vehiculos-con-sobrepeso-yo-sobredimension-circulen-por-un-camino-publico",
+    notes: "Chile requires specialized engineering route studies at defined special-load thresholds; use this to identify qualified firms and engineers."
+  },
+  {
     id: "breakbulk-event-app-attendees",
     name: "Breakbulk Event App Attendees",
     type: "conference_attendee",
