@@ -91,6 +91,16 @@
           </div>
         </BaseCard>
 
+        <BaseCard>
+          <div class="crm-table-head">
+            <div>
+              <h2>Transport engineering discovery</h2>
+              <p>USA, Europe, Brazil/Portuguese and Spanish-speaking LATAM.</p>
+            </div>
+            <router-link class="crm-link" to="/admin/crm/engineering">Open engineering review</router-link>
+          </div>
+        </BaseCard>
+
         <BaseCard class="crm-sources">
           <div class="crm-table-head">
             <div>
