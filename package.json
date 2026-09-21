@@ -28,7 +28,8 @@
     "test:contrast": "node scripts/validate-contrast.js",
     "audit:design": "node scripts/design-system-audit.js",
     "test:design": "npm run lint:design && npm run test:contrast && npm run test:theme && npm run test:a11y",
-    "test:all": "npm run lint && npm run typecheck && npm run test && npm run build && npm run test:e2e"
+    "test:all": "npm run lint && npm run typecheck && npm run test && npm run build && npm run test:e2e",
+    "crm:import:breakbulk": "node scripts/crm/import-breakbulk-exhibitors.mjs"
   },
   "dependencies": {
     "@meforma/vue-toaster": "^1.3.0",
