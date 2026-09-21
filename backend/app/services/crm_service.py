@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from datetime import datetime, timezone
+import hashlib
 from uuid import UUID
 
 from sqlalchemy import func, or_, select
@@ -98,8 +99,28 @@ async def list_people(
 
 
 async def create_person(db: AsyncSession, payload: PersonCreate) -> CrmPerson:
-    person = CrmPerson(**payload.model_dump())
-    db.add(person)
+    person = None
+    if payload.linkedin_url:
+        person = await db.scalar(
+            select(CrmPerson).where(CrmPerson.linkedin_url == payload.linkedin_url)
+        )
+    if person is None:
+        person = await db.scalar(
+            select(CrmPerson).where(
+                CrmPerson.full_name == payload.full_name,
+                CrmPerson.company_id == payload.company_id,
+            )
+        )
+
+    data = payload.model_dump()
+    if person is None:
+        person = CrmPerson(**data)
+        db.add(person)
+    else:
+        for key, value in data.items():
+            if value is not None:
+                setattr(person, key, value)
+
     await db.commit()
     await db.refresh(person)
     return person
@@ -123,8 +144,30 @@ async def create_email(db: AsyncSession, payload: EmailCreate) -> CrmEmail:
 
 
 async def create_evidence(db: AsyncSession, payload: EvidenceCreate) -> CrmEvidence:
-    evidence = CrmEvidence(**payload.model_dump())
-    db.add(evidence)
+    data = payload.model_dump()
+    subject = str(payload.company_id or payload.person_id)
+    if not data.get("fingerprint"):
+        raw = "|".join(
+            [
+                subject,
+                payload.source_id,
+                payload.source_url or "",
+                payload.evidence_type,
+            ]
+        )
+        data["fingerprint"] = hashlib.sha256(raw.encode("utf-8")).hexdigest()
+
+    evidence = await db.scalar(
+        select(CrmEvidence).where(CrmEvidence.fingerprint == data["fingerprint"])
+    )
+    if evidence is None:
+        evidence = CrmEvidence(**data)
+        db.add(evidence)
+    else:
+        for key, value in data.items():
+            if value is not None:
+                setattr(evidence, key, value)
+
     await db.commit()
     await db.refresh(evidence)
     return evidence
