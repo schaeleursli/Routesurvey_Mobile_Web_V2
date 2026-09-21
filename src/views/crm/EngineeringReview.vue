@@ -6,6 +6,21 @@
       elevation="level2"
     >
       <div class="review-content">
+        <BaseCard class="backend-status">
+          <div>
+            <strong>CRM persistence</strong>
+            <p>{{ backendMessage }}</p>
+          </div>
+          <BaseButton
+            variant="primary"
+            size="small"
+            :disabled="syncing || !backendAvailable"
+            @click="syncReviewedSeeds"
+          >
+            {{ syncing ? "Syncing…" : "Sync reviewed seeds" }}
+          </BaseButton>
+        </BaseCard>
+
         <section class="review-metrics">
           <BaseCard v-for="metric in metrics" :key="metric.label" class="metric-card">
             <span>{{ metric.label }}</span>
@@ -115,13 +130,19 @@
 </template>
 
 <script setup>
-import { computed, ref } from "vue";
-import { BaseCard, BasePanel } from "@/components/ui";
+import { computed, onMounted, ref } from "vue";
+import { BaseButton, BaseCard, BasePanel } from "@/components/ui";
+import CrmController from "@/controllers/crm/crm_controller";
+import { syncTransportEngineeringSeeds } from "@/services/crmSeedSyncService";
 import { TRANSPORT_ENGINEERING_REVIEW_QUEUE } from "@/data/crm/transportEngineeringReviewQueue";
 
 const region = ref("all");
 const candidateType = ref("all");
 const query = ref("");
+const backendAvailable = ref(false);
+const backendMessage = ref("Checking CRM backend…");
+const syncing = ref(false);
+const persistedReviewCount = ref(0);
 
 const displayName = (candidate) =>
   candidate.fullName || candidate.companyName || "Unnamed candidate";
@@ -174,6 +195,33 @@ const filtered = computed(() => {
   });
 });
 
+async function refreshBackendState() {
+  try {
+    await CrmController.health();
+    backendAvailable.value = true;
+    const queue = await CrmController.reviewQueue({ limit: 500 });
+    persistedReviewCount.value = queue.length;
+    backendMessage.value = `Connected · ${queue.length} persisted records awaiting verification`;
+  } catch (error) {
+    backendAvailable.value = false;
+    backendMessage.value = "CRM backend unavailable or admin token not accepted.";
+  }
+}
+
+async function syncReviewedSeeds() {
+  if (!backendAvailable.value || syncing.value) return;
+  syncing.value = true;
+  try {
+    const result = await syncTransportEngineeringSeeds();
+    backendMessage.value = `Synced ${result.companies} companies and ${result.people} people.`;
+    await refreshBackendState();
+  } catch (error) {
+    backendMessage.value = error.response?.data?.detail || error.message || "Seed sync failed.";
+  } finally {
+    syncing.value = false;
+  }
+}
+
 const metrics = computed(() => {
   const all = TRANSPORT_ENGINEERING_REVIEW_QUEUE;
   const people = all.filter((item) => item.candidateType === "person").length;
@@ -184,14 +232,19 @@ const metrics = computed(() => {
     { label: "Candidates", value: all.length, hint: "Current reviewed seed universe" },
     { label: "People", value: people, hint: "Named engineers / technical leaders" },
     { label: "Companies", value: companies, hint: "Specialist engineering firms" },
-    { label: "Priority review", value: priority, hint: "Strongest current evidence" }
+    { label: "Priority review", value: priority, hint: "Strongest current evidence" },
+    { label: "Persisted queue", value: persistedReviewCount.value, hint: "Backend verification queue" }
   ];
 });
+
+onMounted(refreshBackendState);
 </script>
 
 <style scoped>
 .review-content { display:grid; gap:1rem; }
-.review-metrics { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:.75rem; }
+.backend-status { display:flex; align-items:center; justify-content:space-between; gap:1rem; }
+.backend-status p { margin:.35rem 0 0; color:var(--text-secondary,#667085); font-size:.84rem; }
+.review-metrics { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:.75rem; }
 .metric-card span,.metric-card small,.table-head p,td span,td small,.boundary p { color:var(--text-secondary,#667085); }
 .metric-card strong { display:block; margin:.3rem 0; font-size:1.8rem; }
 .metric-card span,.metric-card small { display:block; }
@@ -214,6 +267,6 @@ td span,td small { margin-top:.2rem; }
 .state--review { background:#fef7e0; color:#b06000 !important; }
 .state--discovery { background:#f2f4f7; color:#475467 !important; }
 .boundary p { margin:.4rem 0 0; }
-@media (max-width:900px){ .review-metrics,.filters { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (max-width:900px){ .review-metrics,.filters { grid-template-columns:repeat(2,minmax(0,1fr)); } .backend-status{align-items:flex-start;flex-direction:column;} }
 @media (max-width:620px){ .review-metrics,.filters { grid-template-columns:1fr; } .table-head{flex-direction:column;} }
 </style>
