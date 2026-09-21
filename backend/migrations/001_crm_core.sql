@@ -83,6 +83,7 @@ CREATE TABLE IF NOT EXISTS crm_evidence (
   company_id uuid REFERENCES crm_companies(id) ON DELETE CASCADE,
   person_id uuid REFERENCES crm_people(id) ON DELETE CASCADE,
   source_id varchar(160) NOT NULL REFERENCES crm_sources(id),
+  fingerprint varchar(64) NOT NULL UNIQUE,
   source_url text,
   observed_at timestamptz,
   evidence_type varchar(80) NOT NULL DEFAULT 'observation',
