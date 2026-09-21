@@ -92,6 +92,7 @@ class EvidenceCreate(BaseModel):
     company_id: UUID | None = None
     person_id: UUID | None = None
     source_id: str
+    fingerprint: str | None = Field(default=None, min_length=64, max_length=64)
     source_url: str | None = None
     observed_at: datetime | None = None
     evidence_type: str = "observation"
