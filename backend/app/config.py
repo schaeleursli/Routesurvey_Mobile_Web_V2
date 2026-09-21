@@ -24,6 +24,7 @@ class Settings(BaseSettings):
     routesurvey_jwt_secret: str = "change-me-in-env"
     routesurvey_jwt_algorithm: str = "HS256"
     crm_admin_roles: list[str] = ["Admin", "admin"]
+    crm_admin_subjects: list[str] = []
 
     project_name: str = "RouteSurvey CRM API"
     version: str = "0.1.0"
