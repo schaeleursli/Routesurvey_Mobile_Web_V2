@@ -100,25 +100,80 @@ export const CRM_SOURCE_REGISTRY = [
   },
   {
     id: "breakbulk-middle-east-exhibitors-2026",
-    name: "Breakbulk Middle East 2026 Exhibitors",
+    name: "Breakbulk Middle East / Dubai 2026 Exhibitors",
     type: "conference_exhibitor",
     entityLevels: ["company"],
     access: "public",
     ingestion: "reviewed_public_import",
     cadence: "event_cycle",
     url: "https://middleeast.breakbulk.com/exhibitors?culture=en-GB",
-    notes: "Middle East/Africa/Asia project cargo and heavy-lift company universe."
+    notes: "Dubai-based Middle East/Africa/Asia project cargo and heavy-lift company universe."
   },
   {
     id: "breakbulk-middle-east-speakers-2026",
-    name: "Breakbulk Middle East 2026 Speakers",
+    name: "Breakbulk Middle East / Dubai 2026 Speakers",
     type: "conference_speaker",
     entityLevels: ["person", "company"],
     access: "public",
     ingestion: "reviewed_public_import",
     cadence: "event_cycle",
     url: "https://middleeast.breakbulk.com/speaker-list",
-    notes: "Named project-cargo, EPC, rail, port, heavy-lift and logistics decision makers."
+    notes: "Named Dubai/Middle East project-cargo, EPC, rail, port, heavy-lift and logistics decision makers."
+  },
+  {
+    id: "breakbulk-middle-east-dubai-2027-watch",
+    name: "Breakbulk Middle East / Dubai 2027",
+    type: "conference_event_watch",
+    entityLevels: ["person", "company"],
+    access: "public",
+    ingestion: "reviewed_public_import",
+    cadence: "event_cycle",
+    url: "https://middleeast.breakbulk.com/home",
+    notes: "Upcoming 2-3 February 2027 Dubai event. Track exhibitors, speakers, sponsors and public agenda participants as they are published."
+  },
+  {
+    id: "breakbulk-europe-2027-watch",
+    name: "Breakbulk Europe 2027",
+    type: "conference_event_watch",
+    entityLevels: ["person", "company"],
+    access: "public",
+    ingestion: "reviewed_public_import",
+    cadence: "event_cycle",
+    url: "https://europe.breakbulk.com/home",
+    notes: "Upcoming 11-13 May 2027 Rotterdam event. Track current exhibitor list, speakers, sponsors and public agenda participants."
+  },
+  {
+    id: "intermodal-south-america-exhibitors-2026",
+    name: "Intermodal South America 2026 Exhibitors",
+    type: "conference_exhibitor",
+    entityLevels: ["company"],
+    access: "public",
+    ingestion: "reviewed_public_import",
+    cadence: "event_cycle",
+    url: "https://www.intermodal.com.br/lista-de-expositores/",
+    notes: "LATAM logistics, rail, ports, road transport, shipping, customs, warehousing, technology and breakbulk company universe."
+  },
+  {
+    id: "interlog-summit-speakers-2026",
+    name: "Interlog Summit 2026 Speakers",
+    type: "conference_speaker",
+    entityLevels: ["person", "company"],
+    access: "public",
+    ingestion: "reviewed_public_import",
+    cadence: "event_cycle",
+    url: "https://www.intermodal.com.br/en/interlog-summit/",
+    notes: "Senior LATAM logistics, infrastructure, ports, rail and supply-chain speakers associated with Intermodal South America."
+  },
+  {
+    id: "intermodal-south-america-2027-watch",
+    name: "Intermodal South America 2027",
+    type: "conference_event_watch",
+    entityLevels: ["person", "company"],
+    access: "public",
+    ingestion: "reviewed_public_import",
+    cadence: "event_cycle",
+    url: "https://www.intermodal.com.br/en/",
+    notes: "Upcoming 13-15 April 2027 São Paulo event. Track exhibitors, Interlog Summit speakers, sponsors and public event participants."
   },
   {
     id: "breakbulk-event-app-attendees",
