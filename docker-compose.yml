@@ -78,6 +78,7 @@ services:
       ENVIRONMENT: development
       DEBUG: "true"
       ROUTESURVEY_JWT_SECRET: ${ROUTESURVEY_JWT_SECRET:-change-me-in-env}
+      CRM_ADMIN_SUBJECTS: ${CRM_ADMIN_SUBJECTS:-[]}
     depends_on:
       db:
         condition: service_healthy
