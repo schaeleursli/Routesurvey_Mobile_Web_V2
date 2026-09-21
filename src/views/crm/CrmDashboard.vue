@@ -91,6 +91,25 @@
           </div>
         </BaseCard>
 
+        <BaseCard class="crm-sources">
+          <div class="crm-table-head">
+            <div>
+              <h2>Sector source pools</h2>
+              <p>Governed discovery sources for company and contact enrichment.</p>
+            </div>
+          </div>
+          <div class="crm-source-grid">
+            <article v-for="source in sourcePools" :key="source.id" class="crm-source">
+              <div class="crm-source__top">
+                <strong>{{ source.name }}</strong>
+                <span>{{ source.accessLabel }}</span>
+              </div>
+              <p>{{ source.notes }}</p>
+              <small>{{ source.type.replaceAll("_", " ") }} · {{ source.ingestion.replaceAll("_", " ") }}</small>
+            </article>
+          </div>
+        </BaseCard>
+
         <BaseCard class="crm-next">
           <div>
             <strong>CRM v1 boundary</strong>
@@ -110,6 +129,7 @@
 import { computed, inject, onMounted, ref } from "vue";
 import { useUsersAdmin } from "@/composables/users_admin/useUsersAdmin";
 import { BaseCard, BasePanel } from "@/components/ui";
+import { CRM_SOURCE_REGISTRY, CRM_SOURCE_ACCESS_LABELS } from "@/data/crm/sourceRegistry";
 
 const showMessage = inject("showMessage", null);
 const { users, getData } = useUsersAdmin(showMessage);
@@ -117,6 +137,13 @@ const { users, getData } = useUsersAdmin(showMessage);
 const query = ref("");
 const segment = ref("all");
 const displayLimit = 50;
+
+const sourcePools = CRM_SOURCE_REGISTRY
+  .filter((source) => source.id !== "routesurvey-users")
+  .map((source) => ({
+    ...source,
+    accessLabel: CRM_SOURCE_ACCESS_LABELS[source.access] || source.access
+  }));
 
 const personalDomains = new Set([
   "gmail.com",
@@ -402,14 +429,60 @@ onMounted(getData);
   color: var(--text-secondary, #667085);
 }
 
+.crm-source-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.crm-source {
+  border: 1px solid var(--border-color, #eaecf0);
+  border-radius: 10px;
+  padding: 0.85rem;
+}
+
+.crm-source__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.crm-source__top span {
+  flex: none;
+  border-radius: 999px;
+  background: #f2f4f7;
+  color: #475467;
+  padding: 0.15rem 0.45rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.crm-source p,
+.crm-source small {
+  color: var(--text-secondary, #667085);
+}
+
+.crm-source p {
+  margin: 0.5rem 0;
+  font-size: 0.82rem;
+}
+
+.crm-source small {
+  font-size: 0.72rem;
+  text-transform: capitalize;
+}
+
 @media (max-width: 1100px) {
-  .crm-metrics {
+  .crm-metrics,
+  .crm-source-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 680px) {
   .crm-metrics,
+  .crm-source-grid,
   .crm-filters__row {
     grid-template-columns: 1fr;
   }
