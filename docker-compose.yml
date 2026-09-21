@@ -69,6 +69,21 @@ services:
     volumes:
       - ./supabase/storage:/var/lib/storage
 
+  crm_api:
+    build:
+      context: ./backend
+    container_name: routesurvey_crm_api
+    environment:
+      DATABASE_URL: postgresql+asyncpg://postgres:supabase_password@db:5432/postgres
+      ENVIRONMENT: development
+      DEBUG: "true"
+      ROUTESURVEY_JWT_SECRET: ${ROUTESURVEY_JWT_SECRET:-change-me-in-env}
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8002:8002"
+
   # ========================================================================
   # Kong API Gateway
   # ========================================================================
