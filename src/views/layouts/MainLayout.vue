@@ -130,6 +130,14 @@
                         <PhShield class="admin-shield" :size="16" weight="fill" />
                     </router-link>
 
+                    <router-link to="/admin/crm" class="nav-item"
+                        :class="{ active: isNavItemActive('/admin/crm') }"
+                        :title="isSidebarCollapsed ? 'CRM' : ''">
+                        <PhUsers :size="20" :weight="isNavItemActive('/admin/crm') ? 'fill' : 'duotone'" />
+                        <span>CRM</span>
+                        <PhShieldCheck class="admin-shield" :size="16" weight="fill" />
+                    </router-link>
+
                     <router-link to="/admin/templates" class="nav-item"
                         :class="{ active: isNavItemActive('/admin/templates') }"
                         :title="isSidebarCollapsed ? $t('templates') : ''">
