@@ -252,6 +252,15 @@ const mainRoutes = [
     },
   },
   {
+    path: "/admin/crm",
+    name: "RouteSurveyCRM",
+    component: () => import("@/views/crm/CrmDashboard.vue"),
+    meta: {
+      pageTitle: "RouteSurvey CRM",
+      requiresAdmin: true,
+    },
+  },
+  {
     path: "/reporting",
     name: "Reporting",
     component: () => import("@/views/reports/Reporting.vue"),
