@@ -50,6 +50,7 @@ export const useSurveyReviewStore = defineStore('surveyReview', () => {
     const schema = ref<SurveySchemaV1 | null>(null);
     const points = ref<SurveyPoint[]>([]);
     const selectedPointId = ref<string | null>(null);
+    const scanEvidenceByPoint = ref<Record<string, unknown[]>>({});
     const filters = ref<SurveyReviewFilters>({
         category: 'all',
         type: 'all',
@@ -59,6 +60,12 @@ export const useSurveyReviewStore = defineStore('surveyReview', () => {
     const dirtyDraft = ref<Partial<SurveyPoint> | null>(null);
     const isDirty = ref(false);
     const isLoading = ref(false);
+
+    function setScanEvidence(pointId: string, sections: unknown[]): void {
+        if (!points.value.some(point => point.id === pointId)) throw new Error('Unknown survey point');
+        if (!Array.isArray(sections)) throw new Error('Evidence must be an array');
+        scanEvidenceByPoint.value = { ...scanEvidenceByPoint.value, [pointId]: sections };
+    }
 
     // -------------------------------------------------------------------------
     // Getters
@@ -372,6 +379,7 @@ export const useSurveyReviewStore = defineStore('surveyReview', () => {
         schema,
         points,
         selectedPointId,
+        scanEvidenceByPoint,
         filters,
         dirtyDraft,
         isDirty,
@@ -391,6 +399,7 @@ export const useSurveyReviewStore = defineStore('surveyReview', () => {
         // Actions
         loadSchema,
         setPoints,
+        setScanEvidence,
         selectPoint,
         forceSelectPoint,
         updateDraft,
