@@ -224,6 +224,7 @@ export const useSurveyReviewStore = defineStore('surveyReview', () => {
     /** Set points from API response */
     function setPoints(newPoints: SurveyPoint[]): void {
         points.value = newPoints;
+        scanEvidenceByPoint.value = {};
         // Clear selection if no longer valid
         if (selectedPointId.value && !newPoints.find((p) => p.id === selectedPointId.value)) {
             selectedPointId.value = null;
