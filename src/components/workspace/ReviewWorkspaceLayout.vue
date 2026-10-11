@@ -53,11 +53,10 @@
       class="review-workspace__inspector"
       :class="{ hidden: !store.selectedPointId && isSmallScreen }"
     >
-      <PointInspector
-        v-if="store.selectedPointId"
-        @save="handleSave"
-        @delete="handleDelete"
-      />
+      <template v-if="store.selectedPointId">
+        <PointInspector @save="handleSave" @delete="handleDelete" />
+        <SelectedPointEvidence />
+      </template>
       <div v-else class="review-workspace__empty-state">
         <PhMagnifyingGlass :size="48" weight="light" />
         <p>Select a point to view details</p>
@@ -82,6 +81,7 @@ import WorkspaceTopBar from './WorkspaceTopBar.vue';
 import SurveyMapPane from '@/components/map/SurveyMapPane.vue';
 import RouteLogPane from '@/components/log/RouteLogPane.vue';
 import PointInspector from '@/components/inspector/PointInspector.vue';
+import SelectedPointEvidence from '@/features/scan3d/SelectedPointEvidence.vue';
 import UnsavedChangesModal from '@/components/inspector/UnsavedChangesModal.vue';
 
 const props = defineProps<{
